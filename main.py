@@ -68,6 +68,11 @@ def check_s3270_installed():
         if os.path.exists(s3270_path) and os.access(s3270_path, os.X_OK):
             logger.info(f"Found s3270 at: {s3270_path}")
             return True
+        else:
+            s3270_path = os.path.join(path, "s3270.exe")
+            if os.path.exists(s3270_path) and os.access(s3270_path, os.X_OK):
+                logger.info(f"Found s3270 at: {s3270_path}")
+                return True
             
     logger.error("s3270 not found in PATH. Please install it using your package manager.")
     logger.info("For macOS: brew install x3270")
