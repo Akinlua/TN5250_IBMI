@@ -1117,3 +1117,1136 @@ INFO: p3270.p3270 - 2025-05-31 18:01:46,244 - 26835: Send the following text: [0
 INFO: p3270.p3270 - 2025-05-31 18:01:46,245 - 26835: Getting the screen content in text format
 INFO: p3270.p3270 - 2025-05-31 18:01:46,245 - 26835: Save an 'html' screen to file [07_before_result.html]
 INFO: p3270.p3270 - 2025-05-31 18:01:46,246 - 26835: Sending Enter key
+INFO: p3270.p3270 - 2025-06-01 22:50:10,135 - 52459: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-01 22:50:19,598 - 52459: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-01 22:50:19,600 - 52459: Save an 'html' screen to file [step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-01 22:50:19,603 - 52459: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-01 22:50:19,604 - 52459: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-01 22:50:19,604 - 52459: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-01 22:50:19,604 - 52459: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-01 22:50:19,604 - 52459: Sending Enter key
+INFO: p3270.p3270 - 2025-06-01 22:50:23,865 - 52459: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-01 22:50:23,867 - 52459: Save an 'html' screen to file [step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-01 22:50:23,869 - 52459: Sending Enter key
+INFO: p3270.p3270 - 2025-06-01 22:50:26,799 - 52459: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-01 22:50:26,801 - 52459: Save an 'html' screen to file [step_03_command.html]
+INFO: p3270.p3270 - 2025-06-01 22:50:26,804 - 52459: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-01 22:50:26,804 - 52459: Sending Enter key
+INFO: p3270.p3270 - 2025-06-01 22:50:31,373 - 52459: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-01 22:50:31,375 - 52459: Save an 'html' screen to file [step_04_option.html]
+INFO: p3270.p3270 - 2025-06-01 22:50:31,378 - 52459: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-01 22:50:31,378 - 52459: Sending Enter key
+INFO: p3270.p3270 - 2025-06-01 22:50:38,146 - 52459: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-01 22:50:38,148 - 52459: Save an 'html' screen to file [step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-01 22:50:38,151 - 52459: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-01 22:50:38,151 - 52459: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-01 22:50:38,151 - 52459: Sending Enter key
+INFO: p3270.p3270 - 2025-06-01 22:50:41,607 - 52459: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-01 22:50:41,610 - 52459: Save an 'html' screen to file [step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,612 - 52459: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-01 22:50:41,612 - 52459: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,612 - 52459: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-01 22:50:41,613 - 52459: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,613 - 52459: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-01 22:50:41,613 - 52459: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-01 22:50:41,613 - 52459: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,614 - 52459: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-01 22:50:41,614 - 52459: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,614 - 52459: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,614 - 52459: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-01 22:50:41,614 - 52459: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,614 - 52459: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-01 22:50:41,615 - 52459: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-01 22:50:41,615 - 52459: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-01 22:50:41,615 - 52459: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-01 22:50:41,615 - 52459: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,615 - 52459: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,615 - 52459: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,616 - 52459: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,616 - 52459: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,616 - 52459: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,616 - 52459: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-01 22:50:41,616 - 52459: Save an 'html' screen to file [before_submission.html]
+INFO: p3270.p3270 - 2025-06-01 22:50:41,617 - 52459: Sending Enter key
+INFO: p3270.p3270 - 2025-06-01 22:50:44,517 - 52459: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-01 22:50:44,519 - 52459: Save an 'html' screen to file [after_submission.html]
+INFO: p3270.p3270 - 2025-06-01 22:50:44,521 - 52459: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 11:09:01,164 - 2737: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 11:09:12,892 - 2737: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:09:12,895 - 2737: Save an 'html' screen to file [step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 11:09:12,899 - 2737: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 11:09:12,900 - 2737: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 11:09:12,900 - 2737: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:09:12,900 - 2737: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 11:09:12,901 - 2737: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:09:17,075 - 2737: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:09:17,078 - 2737: Save an 'html' screen to file [step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 11:09:17,080 - 2737: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:09:20,374 - 2737: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:09:20,377 - 2737: Save an 'html' screen to file [step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 11:09:20,379 - 2737: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 11:09:20,379 - 2737: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:09:24,083 - 2737: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:09:24,085 - 2737: Save an 'html' screen to file [step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 11:09:24,086 - 2737: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 11:09:24,086 - 2737: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:09:28,435 - 2737: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:09:28,437 - 2737: Save an 'html' screen to file [step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 11:09:28,440 - 2737: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 11:09:28,440 - 2737: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 11:09:28,440 - 2737: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:09:32,732 - 2737: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:09:32,735 - 2737: Save an 'html' screen to file [step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,739 - 2737: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 11:09:32,739 - 2737: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,739 - 2737: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:09:32,739 - 2737: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,740 - 2737: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:09:32,740 - 2737: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:09:32,740 - 2737: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,740 - 2737: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:09:32,741 - 2737: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,741 - 2737: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,741 - 2737: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:09:32,741 - 2737: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,741 - 2737: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:09:32,742 - 2737: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:09:32,742 - 2737: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:09:32,742 - 2737: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:09:32,742 - 2737: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,742 - 2737: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,743 - 2737: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,743 - 2737: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,743 - 2737: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,743 - 2737: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,744 - 2737: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:09:32,745 - 2737: Save an 'html' screen to file [before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 11:09:32,746 - 2737: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:09:34,455 - 2737: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:09:34,457 - 2737: Save an 'html' screen to file [after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 11:09:34,460 - 2737: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 11:27:03,814 - 3446: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 11:27:15,308 - 3446: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:27:15,310 - 3446: Save an 'html' screen to file [step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 11:27:15,314 - 3446: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 11:27:15,314 - 3446: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 11:27:15,314 - 3446: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:27:15,315 - 3446: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 11:27:15,316 - 3446: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:27:19,959 - 3446: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:27:19,962 - 3446: Save an 'html' screen to file [step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 11:27:19,964 - 3446: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:27:22,712 - 3446: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:27:22,715 - 3446: Save an 'html' screen to file [step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 11:27:22,717 - 3446: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 11:27:22,718 - 3446: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:27:26,359 - 3446: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:27:26,360 - 3446: Save an 'html' screen to file [step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 11:27:26,361 - 3446: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 11:27:26,361 - 3446: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:27:37,535 - 3446: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:27:37,537 - 3446: Save an 'html' screen to file [step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 11:27:37,539 - 3446: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 11:27:37,540 - 3446: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 11:27:37,540 - 3446: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:27:41,506 - 3446: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:27:41,508 - 3446: Save an 'html' screen to file [step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,509 - 3446: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 11:27:41,510 - 3446: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,510 - 3446: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:27:41,510 - 3446: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,510 - 3446: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:27:41,511 - 3446: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:27:41,511 - 3446: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,511 - 3446: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:27:41,511 - 3446: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,512 - 3446: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,512 - 3446: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:27:41,512 - 3446: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,512 - 3446: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:27:41,513 - 3446: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:27:41,513 - 3446: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:27:41,513 - 3446: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:27:41,513 - 3446: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:27:41,513 - 3446: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:27:41,513 - 3446: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,514 - 3446: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,514 - 3446: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,514 - 3446: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,514 - 3446: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,515 - 3446: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,515 - 3446: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:27:41,516 - 3446: Save an 'html' screen to file [before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 11:27:41,517 - 3446: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:27:43,014 - 3446: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:27:43,017 - 3446: Save an 'html' screen to file [after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 11:27:43,020 - 3446: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 11:50:32,460 - 3779: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 11:50:40,345 - 3779: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:50:40,347 - 3779: Save an 'html' screen to file [step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 11:50:40,350 - 3779: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 11:50:40,351 - 3779: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 11:50:40,351 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:40,352 - 3779: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 11:50:40,352 - 3779: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:50:44,474 - 3779: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:50:44,476 - 3779: Save an 'html' screen to file [step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 11:50:44,479 - 3779: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:50:46,953 - 3779: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:50:46,955 - 3779: Save an 'html' screen to file [step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 11:50:46,957 - 3779: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 11:50:46,957 - 3779: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:50:50,412 - 3779: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:50:50,414 - 3779: Save an 'html' screen to file [step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 11:50:50,419 - 3779: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 11:50:50,419 - 3779: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:50:54,298 - 3779: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:50:54,301 - 3779: Save an 'html' screen to file [step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 11:50:54,304 - 3779: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 11:50:54,304 - 3779: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 11:50:54,305 - 3779: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:50:57,882 - 3779: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:50:57,885 - 3779: Save an 'html' screen to file [step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,889 - 3779: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 11:50:57,889 - 3779: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,889 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:57,890 - 3779: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,890 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:57,890 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:57,890 - 3779: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,891 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:57,891 - 3779: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,891 - 3779: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,891 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:57,892 - 3779: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,892 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:57,892 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:57,892 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:57,893 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:57,893 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:57,893 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:57,893 - 3779: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,893 - 3779: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,894 - 3779: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,894 - 3779: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:50:57,894 - 3779: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,894 - 3779: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,895 - 3779: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,895 - 3779: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:50:57,896 - 3779: Save an 'html' screen to file [before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 11:50:57,897 - 3779: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:51:00,076 - 3779: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:51:00,078 - 3779: Save an 'html' screen to file [after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 11:51:00,080 - 3779: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 11:52:56,025 - 3855: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 11:53:02,777 - 3855: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:53:02,780 - 3855: Save an 'html' screen to file [step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 11:53:02,783 - 3855: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 11:53:02,784 - 3855: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 11:53:02,784 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:02,784 - 3855: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 11:53:02,784 - 3855: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:53:06,788 - 3855: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:53:06,791 - 3855: Save an 'html' screen to file [step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 11:53:06,793 - 3855: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:53:09,225 - 3855: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:53:09,227 - 3855: Save an 'html' screen to file [step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 11:53:09,229 - 3855: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 11:53:09,230 - 3855: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:53:12,856 - 3855: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:53:12,858 - 3855: Save an 'html' screen to file [step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 11:53:12,860 - 3855: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 11:53:12,861 - 3855: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:53:16,737 - 3855: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:53:16,740 - 3855: Save an 'html' screen to file [step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 11:53:16,743 - 3855: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 11:53:16,744 - 3855: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 11:53:16,745 - 3855: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:53:20,423 - 3855: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:53:20,426 - 3855: Save an 'html' screen to file [step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,430 - 3855: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 11:53:20,430 - 3855: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,431 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,431 - 3855: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,432 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,432 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,432 - 3855: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,433 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,433 - 3855: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,433 - 3855: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,434 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,434 - 3855: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,434 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,435 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,436 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,437 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,437 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,437 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,438 - 3855: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,438 - 3855: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,438 - 3855: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,438 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,439 - 3855: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,439 - 3855: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,439 - 3855: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 11:53:20,439 - 3855: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,440 - 3855: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:53:20,441 - 3855: Save an 'html' screen to file [before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 11:53:20,442 - 3855: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 11:53:22,007 - 3855: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 11:53:22,010 - 3855: Save an 'html' screen to file [after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 11:53:22,012 - 3855: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 12:04:32,642 - 4114: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:04:41,865 - 4114: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:04:41,868 - 4114: Save an 'html' screen to file [step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 12:04:41,871 - 4114: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:04:41,872 - 4114: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:04:41,872 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:04:41,872 - 4114: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:04:41,872 - 4114: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:04:46,093 - 4114: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:04:46,095 - 4114: Save an 'html' screen to file [step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 12:04:46,098 - 4114: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:04:49,134 - 4114: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:04:49,137 - 4114: Save an 'html' screen to file [step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 12:04:49,139 - 4114: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 12:04:49,139 - 4114: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:04:52,747 - 4114: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:04:52,750 - 4114: Save an 'html' screen to file [step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 12:04:52,752 - 4114: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 12:04:52,752 - 4114: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:04:56,638 - 4114: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:04:56,640 - 4114: Save an 'html' screen to file [step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 12:04:56,642 - 4114: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 12:04:56,643 - 4114: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 12:04:56,643 - 4114: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:05:00,061 - 4114: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:05:00,063 - 4114: Save an 'html' screen to file [step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,065 - 4114: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:05:00,066 - 4114: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,066 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:00,066 - 4114: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,067 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:00,067 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:00,067 - 4114: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,067 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:00,068 - 4114: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,068 - 4114: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,069 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:00,069 - 4114: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,069 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:00,069 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:00,069 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:00,069 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:00,070 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:00,070 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:00,070 - 4114: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,070 - 4114: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,071 - 4114: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,071 - 4114: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,071 - 4114: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,072 - 4114: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:00,072 - 4114: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,072 - 4114: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:05:00,073 - 4114: Save an 'html' screen to file [before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:05:00,073 - 4114: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:05:01,505 - 4114: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:05:01,507 - 4114: Save an 'html' screen to file [after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:05:01,509 - 4114: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 12:05:29,372 - 4161: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:05:36,706 - 4161: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:05:36,708 - 4161: Save an 'html' screen to file [step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 12:05:36,712 - 4161: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:05:36,712 - 4161: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:05:36,713 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:36,713 - 4161: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:05:36,713 - 4161: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:05:40,874 - 4161: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:05:40,877 - 4161: Save an 'html' screen to file [step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 12:05:40,880 - 4161: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:05:43,455 - 4161: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:05:43,457 - 4161: Save an 'html' screen to file [step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 12:05:43,461 - 4161: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 12:05:43,461 - 4161: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:05:46,896 - 4161: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:05:46,899 - 4161: Save an 'html' screen to file [step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 12:05:46,902 - 4161: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 12:05:46,903 - 4161: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:05:50,824 - 4161: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:05:50,827 - 4161: Save an 'html' screen to file [step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 12:05:50,831 - 4161: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 12:05:50,831 - 4161: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 12:05:50,831 - 4161: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:05:54,493 - 4161: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:05:54,496 - 4161: Save an 'html' screen to file [step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,500 - 4161: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:05:54,500 - 4161: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,501 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:54,501 - 4161: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,501 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:54,502 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:54,502 - 4161: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,502 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:54,502 - 4161: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,502 - 4161: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,503 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:54,503 - 4161: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,503 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:54,504 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:54,504 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:54,505 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:54,505 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:54,506 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:54,506 - 4161: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,506 - 4161: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,507 - 4161: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,507 - 4161: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,507 - 4161: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,507 - 4161: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:05:54,507 - 4161: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,508 - 4161: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:05:54,509 - 4161: Save an 'html' screen to file [before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:05:54,510 - 4161: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:05:55,965 - 4161: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:05:55,968 - 4161: Save an 'html' screen to file [after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:05:55,971 - 4161: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 12:06:16,378 - 4216: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:06:24,565 - 4216: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:06:24,568 - 4216: Save an 'html' screen to file [step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 12:06:24,571 - 4216: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:06:24,572 - 4216: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:06:24,572 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:24,573 - 4216: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:06:24,573 - 4216: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:06:28,688 - 4216: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:06:28,689 - 4216: Save an 'html' screen to file [step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 12:06:28,691 - 4216: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:06:31,186 - 4216: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:06:31,189 - 4216: Save an 'html' screen to file [step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 12:06:31,191 - 4216: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 12:06:31,191 - 4216: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:06:34,651 - 4216: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:06:34,653 - 4216: Save an 'html' screen to file [step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 12:06:34,655 - 4216: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 12:06:34,655 - 4216: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:06:38,526 - 4216: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:06:38,528 - 4216: Save an 'html' screen to file [step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 12:06:38,529 - 4216: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 12:06:38,529 - 4216: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 12:06:38,529 - 4216: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:06:42,110 - 4216: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:06:42,113 - 4216: Save an 'html' screen to file [step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,116 - 4216: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:06:42,117 - 4216: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,117 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,117 - 4216: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,118 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,118 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,118 - 4216: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,118 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,119 - 4216: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,120 - 4216: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,120 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,120 - 4216: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,121 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,121 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,121 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,121 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,121 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,122 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,122 - 4216: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,122 - 4216: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,123 - 4216: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,123 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,123 - 4216: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,123 - 4216: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,123 - 4216: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:06:42,124 - 4216: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,124 - 4216: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:06:42,125 - 4216: Save an 'html' screen to file [before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:06:42,126 - 4216: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:06:43,694 - 4216: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:06:43,697 - 4216: Save an 'html' screen to file [after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:06:43,701 - 4216: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 12:16:01,292 - 4385: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:16:08,669 - 4385: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:16:08,671 - 4385: Save an 'html' screen to file [step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 12:16:08,674 - 4385: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:16:08,674 - 4385: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:16:08,674 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:08,674 - 4385: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:16:08,675 - 4385: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:16:12,719 - 4385: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:16:12,722 - 4385: Save an 'html' screen to file [step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 12:16:12,724 - 4385: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:16:15,199 - 4385: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:16:15,200 - 4385: Save an 'html' screen to file [step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 12:16:15,201 - 4385: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 12:16:15,202 - 4385: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:16:18,678 - 4385: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:16:18,680 - 4385: Save an 'html' screen to file [step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 12:16:18,683 - 4385: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 12:16:18,683 - 4385: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:16:22,691 - 4385: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:16:22,694 - 4385: Save an 'html' screen to file [step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 12:16:22,696 - 4385: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 12:16:22,696 - 4385: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 12:16:22,697 - 4385: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:16:26,154 - 4385: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:16:26,155 - 4385: Save an 'html' screen to file [step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,156 - 4385: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:16:26,156 - 4385: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,156 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,156 - 4385: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,156 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,156 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,156 - 4385: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,157 - 4385: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,158 - 4385: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,158 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,158 - 4385: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,158 - 4385: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,158 - 4385: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:16:26,158 - 4385: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,158 - 4385: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:16:26,159 - 4385: Save an 'html' screen to file [before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:16:26,159 - 4385: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:16:27,664 - 4385: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:16:27,666 - 4385: Save an 'html' screen to file [after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:16:27,668 - 4385: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 12:18:16,230 - 4500: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:18:23,510 - 4500: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:18:23,512 - 4500: Save an 'html' screen to file [step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 12:18:23,515 - 4500: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:18:23,516 - 4500: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:18:23,516 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:23,516 - 4500: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:18:23,516 - 4500: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:18:27,569 - 4500: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:18:27,571 - 4500: Save an 'html' screen to file [step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 12:18:27,573 - 4500: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:18:30,025 - 4500: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:18:30,026 - 4500: Save an 'html' screen to file [step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 12:18:30,028 - 4500: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 12:18:30,028 - 4500: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:18:33,467 - 4500: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:18:33,469 - 4500: Save an 'html' screen to file [step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 12:18:33,470 - 4500: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 12:18:33,471 - 4500: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:18:37,236 - 4500: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:18:37,238 - 4500: Save an 'html' screen to file [step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 12:18:37,239 - 4500: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 12:18:37,239 - 4500: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 12:18:37,240 - 4500: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:18:40,731 - 4500: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:18:40,733 - 4500: Save an 'html' screen to file [step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,734 - 4500: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:18:40,734 - 4500: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,735 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,735 - 4500: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,735 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,735 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,735 - 4500: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,736 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,736 - 4500: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,736 - 4500: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,736 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,737 - 4500: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,737 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,737 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,738 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,738 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,738 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,738 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,738 - 4500: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,739 - 4500: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,739 - 4500: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,739 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,739 - 4500: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,739 - 4500: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,740 - 4500: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:18:40,740 - 4500: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,740 - 4500: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:18:40,741 - 4500: Save an 'html' screen to file [before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:18:40,743 - 4500: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:18:42,235 - 4500: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:18:42,236 - 4500: Save an 'html' screen to file [after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:18:42,238 - 4500: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 12:20:22,111 - 4585: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:20:28,989 - 4585: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:20:28,991 - 4585: Save an 'html' screen to file [step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 12:20:28,995 - 4585: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:20:28,995 - 4585: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:20:28,996 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:28,996 - 4585: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:20:28,996 - 4585: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:20:33,112 - 4585: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:20:33,115 - 4585: Save an 'html' screen to file [step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 12:20:33,117 - 4585: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:20:35,630 - 4585: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:20:35,632 - 4585: Save an 'html' screen to file [step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 12:20:35,635 - 4585: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 12:20:35,636 - 4585: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:20:39,221 - 4585: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:20:39,224 - 4585: Save an 'html' screen to file [step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 12:20:39,226 - 4585: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 12:20:39,226 - 4585: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:20:42,987 - 4585: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:20:42,990 - 4585: Save an 'html' screen to file [step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 12:20:42,992 - 4585: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 12:20:42,993 - 4585: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 12:20:42,993 - 4585: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:20:46,466 - 4585: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:20:46,469 - 4585: Save an 'html' screen to file [step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,472 - 4585: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:20:46,472 - 4585: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,472 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,472 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,473 - 4585: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,473 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,473 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,473 - 4585: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,474 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,474 - 4585: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,474 - 4585: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,474 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,474 - 4585: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,474 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,475 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,475 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,475 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,475 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,475 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,475 - 4585: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,475 - 4585: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,476 - 4585: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,476 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,477 - 4585: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,477 - 4585: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,477 - 4585: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:20:46,477 - 4585: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,478 - 4585: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:20:46,479 - 4585: Save an 'html' screen to file [before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:20:46,480 - 4585: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:20:47,741 - 4585: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:20:47,744 - 4585: Save an 'html' screen to file [after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:20:47,746 - 4585: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 12:28:10,533 - 4818: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:28:17,235 - 4818: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:28:17,236 - 4818: Save an 'html' screen to file [screen_output_20250603_122810/step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 12:28:17,238 - 4818: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:28:17,238 - 4818: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:28:17,238 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:17,238 - 4818: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:28:17,238 - 4818: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:28:21,235 - 4818: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:28:21,236 - 4818: Save an 'html' screen to file [screen_output_20250603_122810/step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 12:28:21,236 - 4818: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:28:23,679 - 4818: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:28:23,680 - 4818: Save an 'html' screen to file [screen_output_20250603_122810/step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 12:28:23,682 - 4818: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 12:28:23,682 - 4818: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:28:27,140 - 4818: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:28:27,141 - 4818: Save an 'html' screen to file [screen_output_20250603_122810/step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 12:28:27,141 - 4818: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 12:28:27,142 - 4818: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:28:30,981 - 4818: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:28:30,982 - 4818: Save an 'html' screen to file [screen_output_20250603_122810/step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 12:28:30,983 - 4818: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 12:28:30,983 - 4818: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 12:28:30,983 - 4818: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:28:34,494 - 4818: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:28:34,495 - 4818: Save an 'html' screen to file [screen_output_20250603_122810/step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,496 - 4818: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:28:34,496 - 4818: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,496 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,496 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,496 - 4818: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,496 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,497 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,497 - 4818: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,497 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,497 - 4818: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,497 - 4818: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,497 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,497 - 4818: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,498 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,498 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,498 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,498 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,498 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,498 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,498 - 4818: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,498 - 4818: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,498 - 4818: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,498 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,498 - 4818: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,499 - 4818: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,499 - 4818: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:28:34,499 - 4818: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,499 - 4818: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:28:34,499 - 4818: Save an 'html' screen to file [screen_output_20250603_122810/before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:28:34,500 - 4818: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:28:35,732 - 4818: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:28:35,733 - 4818: Save an 'html' screen to file [screen_output_20250603_122810/after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:28:35,735 - 4818: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 12:34:02,688 - 4932: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:34:09,584 - 4932: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:34:09,585 - 4932: Save an 'html' screen to file [screen_output_20250603_123402/step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 12:34:09,587 - 4932: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:34:09,587 - 4932: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:34:09,587 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:09,587 - 4932: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:34:09,587 - 4932: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:34:13,627 - 4932: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:34:13,629 - 4932: Save an 'html' screen to file [screen_output_20250603_123402/step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 12:34:13,631 - 4932: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:34:16,349 - 4932: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:34:16,351 - 4932: Save an 'html' screen to file [screen_output_20250603_123402/step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 12:34:16,354 - 4932: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 12:34:16,354 - 4932: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:34:19,860 - 4932: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:34:19,862 - 4932: Save an 'html' screen to file [screen_output_20250603_123402/step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 12:34:19,864 - 4932: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 12:34:19,864 - 4932: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:34:23,655 - 4932: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:34:23,657 - 4932: Save an 'html' screen to file [screen_output_20250603_123402/step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 12:34:23,659 - 4932: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 12:34:23,659 - 4932: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 12:34:23,659 - 4932: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:34:26,887 - 4932: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:34:26,889 - 4932: Save an 'html' screen to file [screen_output_20250603_123402/step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,891 - 4932: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:34:26,892 - 4932: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,892 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,893 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,893 - 4932: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,894 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,894 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,894 - 4932: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,894 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,894 - 4932: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,895 - 4932: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,896 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,896 - 4932: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,896 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,896 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,897 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,897 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,897 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,897 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,898 - 4932: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,898 - 4932: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,898 - 4932: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,898 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,899 - 4932: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,899 - 4932: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,899 - 4932: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:34:26,900 - 4932: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,900 - 4932: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:34:26,901 - 4932: Save an 'html' screen to file [screen_output_20250603_123402/before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:34:26,902 - 4932: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:34:28,132 - 4932: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:34:28,133 - 4932: Save an 'html' screen to file [screen_output_20250603_123402/after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:34:28,134 - 4932: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 12:35:20,937 - 4989: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:35:27,966 - 4989: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:35:27,967 - 4989: Save an 'html' screen to file [screen_output_20250603_123520/step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 12:35:27,968 - 4989: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:35:27,968 - 4989: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:35:27,969 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:27,969 - 4989: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:35:27,969 - 4989: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:35:32,055 - 4989: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:35:32,056 - 4989: Save an 'html' screen to file [screen_output_20250603_123520/step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 12:35:32,057 - 4989: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:35:34,591 - 4989: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:35:34,592 - 4989: Save an 'html' screen to file [screen_output_20250603_123520/step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 12:35:34,593 - 4989: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 12:35:34,593 - 4989: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:35:38,090 - 4989: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:35:38,091 - 4989: Save an 'html' screen to file [screen_output_20250603_123520/step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 12:35:38,092 - 4989: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 12:35:38,092 - 4989: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:35:41,868 - 4989: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:35:41,870 - 4989: Save an 'html' screen to file [screen_output_20250603_123520/step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 12:35:41,873 - 4989: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 12:35:41,873 - 4989: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 12:35:41,873 - 4989: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:35:45,090 - 4989: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:35:45,092 - 4989: Save an 'html' screen to file [screen_output_20250603_123520/step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,094 - 4989: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:35:45,094 - 4989: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,095 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,095 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,095 - 4989: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,096 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,096 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,096 - 4989: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,096 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,096 - 4989: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,097 - 4989: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,097 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,097 - 4989: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,097 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,097 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,098 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,098 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,098 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,098 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,098 - 4989: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,098 - 4989: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,099 - 4989: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,099 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,099 - 4989: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,099 - 4989: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,100 - 4989: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:35:45,100 - 4989: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,100 - 4989: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:35:45,100 - 4989: Save an 'html' screen to file [screen_output_20250603_123520/before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:35:45,101 - 4989: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:35:46,338 - 4989: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:35:46,341 - 4989: Save an 'html' screen to file [screen_output_20250603_123520/after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:35:46,343 - 4989: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 12:38:55,905 - 5115: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:39:03,056 - 5115: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:39:03,058 - 5115: Save an 'html' screen to file [screen_output_20250603_123855/step_01_credentials.html]
+INFO: p3270.p3270 - 2025-06-03 12:39:03,062 - 5115: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:39:03,062 - 5115: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:39:03,063 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:03,063 - 5115: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:39:03,063 - 5115: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:39:07,094 - 5115: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:39:07,097 - 5115: Save an 'html' screen to file [screen_output_20250603_123855/step_02_enter.html]
+INFO: p3270.p3270 - 2025-06-03 12:39:07,100 - 5115: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:39:09,579 - 5115: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:39:09,582 - 5115: Save an 'html' screen to file [screen_output_20250603_123855/step_03_command.html]
+INFO: p3270.p3270 - 2025-06-03 12:39:09,584 - 5115: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 12:39:09,585 - 5115: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:39:13,055 - 5115: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:39:13,057 - 5115: Save an 'html' screen to file [screen_output_20250603_123855/step_04_option.html]
+INFO: p3270.p3270 - 2025-06-03 12:39:13,059 - 5115: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 12:39:13,060 - 5115: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:39:16,927 - 5115: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:39:16,930 - 5115: Save an 'html' screen to file [screen_output_20250603_123855/step_05_option_with_id.html]
+INFO: p3270.p3270 - 2025-06-03 12:39:16,933 - 5115: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 12:39:16,933 - 5115: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 12:39:16,934 - 5115: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:39:20,184 - 5115: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:39:20,187 - 5115: Save an 'html' screen to file [screen_output_20250603_123855/step_06_form_fill.html]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,190 - 5115: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:39:20,190 - 5115: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,191 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,191 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,192 - 5115: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,193 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,193 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,193 - 5115: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,194 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,194 - 5115: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,194 - 5115: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,195 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,195 - 5115: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,195 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,195 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,195 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,196 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,196 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,196 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,196 - 5115: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,196 - 5115: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,197 - 5115: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,197 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,197 - 5115: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,197 - 5115: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,198 - 5115: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:39:20,198 - 5115: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,198 - 5115: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:39:20,199 - 5115: Save an 'html' screen to file [screen_output_20250603_123855/before_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:39:20,200 - 5115: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:39:21,444 - 5115: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:39:21,445 - 5115: Save an 'html' screen to file [screen_output_20250603_123855/after_submission.html]
+INFO: p3270.p3270 - 2025-06-03 12:39:21,447 - 5115: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 12:46:20,833 - 5246: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:46:28,634 - 5246: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:46:28,635 - 5246: Save an 'html' screen to file [screen_output_20250603_124620/step_01_credentials_124628.html]
+INFO: p3270.p3270 - 2025-06-03 12:46:28,638 - 5246: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:46:28,638 - 5246: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:46:28,639 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:28,639 - 5246: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:46:28,639 - 5246: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:46:32,772 - 5246: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:46:32,773 - 5246: Save an 'html' screen to file [screen_output_20250603_124620/step_02_enter_124632.html]
+INFO: p3270.p3270 - 2025-06-03 12:46:32,775 - 5246: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:46:35,268 - 5246: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:46:35,269 - 5246: Save an 'html' screen to file [screen_output_20250603_124620/step_03_command_124635.html]
+INFO: p3270.p3270 - 2025-06-03 12:46:35,271 - 5246: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 12:46:35,272 - 5246: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:46:38,918 - 5246: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:46:38,920 - 5246: Save an 'html' screen to file [screen_output_20250603_124620/step_04_option_124638.html]
+INFO: p3270.p3270 - 2025-06-03 12:46:38,921 - 5246: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 12:46:38,921 - 5246: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:46:42,665 - 5246: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:46:42,666 - 5246: Save an 'html' screen to file [screen_output_20250603_124620/step_05_option_with_id_124642.html]
+INFO: p3270.p3270 - 2025-06-03 12:46:42,668 - 5246: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 12:46:42,668 - 5246: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 12:46:42,668 - 5246: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:46:45,985 - 5246: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:46:45,986 - 5246: Save an 'html' screen to file [screen_output_20250603_124620/step_06_form_fill_124645.html]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,988 - 5246: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:46:45,988 - 5246: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,989 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,989 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,989 - 5246: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,990 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,990 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,990 - 5246: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,991 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,991 - 5246: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,991 - 5246: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,991 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,992 - 5246: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,992 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,992 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,992 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,992 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,992 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,993 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,993 - 5246: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,993 - 5246: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,993 - 5246: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,993 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,994 - 5246: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,994 - 5246: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,994 - 5246: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:46:45,994 - 5246: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,995 - 5246: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:46:45,996 - 5246: Save an 'html' screen to file [screen_output_20250603_124620/before_submission_124645.html]
+INFO: p3270.p3270 - 2025-06-03 12:46:45,997 - 5246: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:46:47,224 - 5246: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:46:47,225 - 5246: Save an 'html' screen to file [screen_output_20250603_124620/after_submission_124647.html]
+INFO: p3270.p3270 - 2025-06-03 12:46:47,227 - 5246: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 12:47:42,519 - 5328: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:47:51,201 - 5328: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:47:51,202 - 5328: Save an 'html' screen to file [01_signin.html]
+INFO: p3270.p3270 - 2025-06-03 12:47:51,204 - 5328: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:47:51,204 - 5328: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:47:51,204 - 5328: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:47:51,204 - 5328: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:47:51,204 - 5328: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:48:12,542 - 5362: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 12:48:20,172 - 5362: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:48:20,174 - 5362: Save an 'html' screen to file [01_signin.html]
+INFO: p3270.p3270 - 2025-06-03 12:48:20,176 - 5362: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 12:48:20,176 - 5362: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 12:48:20,176 - 5362: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 12:48:20,176 - 5362: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 12:48:20,177 - 5362: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:48:24,303 - 5362: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:48:24,304 - 5362: Save an 'html' screen to file [02_message.html]
+INFO: p3270.p3270 - 2025-06-03 12:48:24,306 - 5362: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:48:26,768 - 5362: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:48:26,769 - 5362: Save an 'html' screen to file [03_mainmenu.html]
+INFO: p3270.p3270 - 2025-06-03 12:48:26,771 - 5362: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 12:48:26,772 - 5362: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 12:48:30,210 - 5362: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 12:48:30,211 - 5362: Save an 'html' screen to file [04_adminmenu.html]
+INFO: p3270.p3270 - 2025-06-03 12:48:30,213 - 5362: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 12:48:30,213 - 5362: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:11:23,905 - 5915: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 13:11:30,859 - 5915: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:11:30,862 - 5915: Save an 'html' screen to file [01_signon]
+INFO: p3270.p3270 - 2025-06-03 13:11:30,865 - 5915: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 13:11:30,866 - 5915: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 13:11:30,866 - 5915: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:11:30,866 - 5915: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 13:11:30,866 - 5915: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:11:34,910 - 5915: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:11:34,912 - 5915: Save an 'html' screen to file [02_message.html]
+INFO: p3270.p3270 - 2025-06-03 13:11:34,915 - 5915: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:13:11,930 - 6006: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 13:13:19,101 - 6006: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:13:19,102 - 6006: Save an 'html' screen to file [screen]
+INFO: p3270.p3270 - 2025-06-03 13:13:19,105 - 6006: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 13:13:19,106 - 6006: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 13:13:19,106 - 6006: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:13:19,107 - 6006: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 13:13:19,107 - 6006: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:15:45,630 - 6102: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 13:15:45,630 - 6102: Executing command: [Connect(B:10.150.0.59)]
+INFO: p3270.p3270 - 2025-06-03 13:15:52,533 - 6102: Executing command: [NoOpCommand]
+INFO: p3270.p3270 - 2025-06-03 13:15:52,534 - 6102: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:15:52,534 - 6102: Executing command: [PrintText(string)]
+INFO: p3270.p3270 - 2025-06-03 13:15:52,535 - 6102: Save an 'html' screen to file [screen]
+INFO: p3270.p3270 - 2025-06-03 13:15:52,535 - 6102: Executing command: [PrintText(html, screen)]
+INFO: p3270.p3270 - 2025-06-03 13:15:52,539 - 6102: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 13:15:52,539 - 6102: Executing command: [Home]
+INFO: p3270.p3270 - 2025-06-03 13:15:52,540 - 6102: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 13:15:52,540 - 6102: Executing command: [String("QPGMR")]
+INFO: p3270.p3270 - 2025-06-03 13:15:52,540 - 6102: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:15:52,540 - 6102: Executing command: [Tab]
+INFO: p3270.p3270 - 2025-06-03 13:15:52,540 - 6102: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 13:15:52,540 - 6102: Executing command: [String("AUMTQPgm")]
+INFO: p3270.p3270 - 2025-06-03 13:15:52,541 - 6102: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:15:52,541 - 6102: Executing command: [Enter]
+INFO: p3270.p3270 - 2025-06-03 13:15:54,947 - 6102: Executing command: [NoOpCommand]
+INFO: p3270.p3270 - 2025-06-03 13:15:54,948 - 6102: Executing command: [NoOpCommand]
+INFO: p3270.p3270 - 2025-06-03 13:28:43,010 - 6366: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 13:28:50,022 - 6366: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:28:50,024 - 6366: Save an 'html' screen to file [screen]
+INFO: p3270.p3270 - 2025-06-03 13:28:50,026 - 6366: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 13:28:50,026 - 6366: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 13:28:50,027 - 6366: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:28:50,027 - 6366: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 13:28:50,027 - 6366: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:28:54,222 - 6366: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:28:54,224 - 6366: Save an 'html' screen to file [02_message.html]
+INFO: p3270.p3270 - 2025-06-03 13:28:54,226 - 6366: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:28:56,699 - 6366: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:28:56,700 - 6366: Save an 'html' screen to file [03_mainmenu.html]
+INFO: p3270.p3270 - 2025-06-03 13:28:56,702 - 6366: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 13:28:56,702 - 6366: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:29:00,157 - 6366: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:29:00,157 - 6366: Save an 'html' screen to file [04_adminmenu.html]
+INFO: p3270.p3270 - 2025-06-03 13:29:00,158 - 6366: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 13:29:00,158 - 6366: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:29:03,895 - 6366: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:29:03,896 - 6366: Save an 'html' screen to file [05_final.html]
+INFO: p3270.p3270 - 2025-06-03 13:29:03,897 - 6366: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:29:03,898 - 6366: Save an 'html' screen to file [05_company_maintenance.html]
+INFO: p3270.p3270 - 2025-06-03 13:29:03,899 - 6366: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 13:29:03,899 - 6366: Send the following text: [689]
+INFO: p3270.p3270 - 2025-06-03 13:29:03,899 - 6366: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:29:07,225 - 6366: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:29:07,227 - 6366: Save an 'html' screen to file [06_company_details.html]
+INFO: p3270.p3270 - 2025-06-03 13:29:07,228 - 6366: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 13:29:43,422 - 6402: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 13:29:50,941 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:29:50,943 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:29:50,944 - 6402: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 13:29:50,944 - 6402: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 13:29:50,944 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:29:50,944 - 6402: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 13:29:50,945 - 6402: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:29:55,131 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:29:55,132 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:29:55,133 - 6402: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:29:57,575 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:29:57,577 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:29:57,578 - 6402: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 13:29:57,578 - 6402: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:30:01,023 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:30:01,024 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:30:01,026 - 6402: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 13:30:01,026 - 6402: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:30:04,775 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:30:04,777 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:30:04,778 - 6402: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 13:30:04,779 - 6402: Send the following text: [690]
+INFO: p3270.p3270 - 2025-06-03 13:30:04,779 - 6402: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:30:08,260 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:30:08,262 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:30:08,264 - 6402: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 13:30:08,264 - 6402: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 13:30:08,264 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,265 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,265 - 6402: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 13:30:08,265 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,265 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,265 - 6402: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 13:30:08,266 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,266 - 6402: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 13:30:08,266 - 6402: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 13:30:08,266 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,267 - 6402: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 13:30:08,267 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,267 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,267 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,267 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,267 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,267 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,267 - 6402: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 13:30:08,268 - 6402: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 13:30:08,268 - 6402: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 13:30:08,268 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,268 - 6402: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 13:30:08,268 - 6402: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 13:30:08,269 - 6402: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:30:08,269 - 6402: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 13:30:08,269 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:30:08,270 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:30:08,271 - 6402: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:30:09,526 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:30:09,527 - 6402: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:30:09,529 - 6402: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-06-03 13:48:00,134 - 6782: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-06-03 13:48:17,130 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:17,133 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:17,134 - 6782: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 13:48:17,134 - 6782: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-06-03 13:48:17,135 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:17,135 - 6782: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-06-03 13:48:17,135 - 6782: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:48:21,894 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:21,895 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:21,896 - 6782: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:48:24,716 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:24,717 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:24,717 - 6782: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-06-03 13:48:24,718 - 6782: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:48:28,248 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:28,248 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:28,249 - 6782: Send the following text: [21]
+INFO: p3270.p3270 - 2025-06-03 13:48:28,249 - 6782: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:48:32,260 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:32,261 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:32,263 - 6782: Send the following text: [A]
+INFO: p3270.p3270 - 2025-06-03 13:48:32,263 - 6782: Send the following text: [691]
+INFO: p3270.p3270 - 2025-06-03 13:48:32,263 - 6782: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:48:35,966 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:35,967 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:35,968 - 6782: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-06-03 13:48:35,969 - 6782: Send the following text: [TEST COMPANY 10]
+INFO: p3270.p3270 - 2025-06-03 13:48:35,969 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,969 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,969 - 6782: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-06-03 13:48:35,969 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,969 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,970 - 6782: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-06-03 13:48:35,970 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,970 - 6782: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-06-03 13:48:35,970 - 6782: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-06-03 13:48:35,970 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,970 - 6782: Send the following text: [US]
+INFO: p3270.p3270 - 2025-06-03 13:48:35,971 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,971 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,971 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,971 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,971 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,971 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,971 - 6782: Send the following text: [F]
+INFO: p3270.p3270 - 2025-06-03 13:48:35,971 - 6782: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 13:48:35,972 - 6782: Send the following text: [12]
+INFO: p3270.p3270 - 2025-06-03 13:48:35,972 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,972 - 6782: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 13:48:35,972 - 6782: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-06-03 13:48:35,972 - 6782: Sending tab to remote host
+INFO: p3270.p3270 - 2025-06-03 13:48:35,972 - 6782: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-06-03 13:48:35,973 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:35,974 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:35,975 - 6782: Sending Enter key
+INFO: p3270.p3270 - 2025-06-03 13:48:38,323 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:38,325 - 6782: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-06-03 13:48:38,327 - 6782: Disconnect from host (10.150.0.59)

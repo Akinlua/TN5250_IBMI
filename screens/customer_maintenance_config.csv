@@ -1,0 +1,11 @@
+FIELD_NAME,MAX_LENGTH,REQUIRED,TYPE,VALID_VALUES,TABS_NEEDED,TABS_NEEDED_EMPTY,DESCRIPTION
+CUSTOMER_ID,6,True,text,,1,1,Customer ID field
+CUSTOMER_NAME,30,True,text,,1,1,Customer name field
+CUSTOMER_ADDRESS,50,True,text,,1,1,Customer address field
+CUSTOMER_CITY,20,True,text,,1,1,Customer city field
+CUSTOMER_STATE,2,True,text,,1,1,Customer state field
+CUSTOMER_ZIP,10,True,text,,1,1,Customer zip code field
+CUSTOMER_PHONE,10,False,digits,,1,1,Customer phone number field
+CUSTOMER_CONTACT,25,False,text,,1,1,Customer contact person field
+CUSTOMER_TYPE,1,True,text,"B,I,G",1,1,Customer type (B=Business I=Individual G=Government)
+CREDIT_LIMIT,8,True,digits,,1,1,Customer credit limit field 

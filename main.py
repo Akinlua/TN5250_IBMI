@@ -356,7 +356,7 @@ def main():
         logger.info("Step 1: Processing Sign On screen...")
         try:
             screen = client.getScreen()
-            client.saveScreen(fileName='01_signin.html')
+            client.saveScreen()
             logger.info("Sign On screen content:")
             logger.info("-" * 50)
             logger.info(screen)

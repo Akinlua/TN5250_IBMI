@@ -1,0 +1,11 @@
+FIELD_NAME,MAX_LENGTH,REQUIRED,TYPE,VALID_VALUES,TABS_NEEDED,TABS_NEEDED_EMPTY,DESCRIPTION
+VENDOR_ID,6,True,text,,1,1,Vendor ID field
+VENDOR_NAME,30,True,text,,1,1,Vendor name field
+VENDOR_ADDRESS,50,True,text,,1,1,Vendor address field
+VENDOR_CITY,20,True,text,,1,1,Vendor city field
+VENDOR_STATE,2,True,text,,1,1,Vendor state field
+VENDOR_ZIP,10,True,text,,1,1,Vendor zip code field
+VENDOR_PHONE,10,False,digits,,1,1,Vendor phone number field
+VENDOR_CONTACT,25,False,text,,1,1,Vendor contact person field
+VENDOR_TYPE,1,True,text,"S,M,D",1,1,Vendor type (S=Supplier M=Manufacturer D=Distributor)
+PAYMENT_TERMS,6,True,text,"NET30,NET60,COD",1,1,Payment terms field 

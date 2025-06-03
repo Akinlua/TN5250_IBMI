@@ -1,0 +1,15 @@
+FIELD_NAME,MAX_LENGTH,REQUIRED,TYPE,VALID_VALUES,TABS_NEEDED,TABS_NEEDED_EMPTY,DESCRIPTION
+COMPANY_NAME,28,True,text,,2,2,Company name field
+COMPANY_ADDRESS,60,True,text,,2,2,Company address field (spans 2 lines)
+COMPANY_LOCATION,20,True,text,,1,1,Company location/city field
+COMPANY_REGION,2,True,text,,1,1,Company region/state field
+COMPANY_POSTAL_CODE,10,True,text,,1,1,Company postal/zip code field
+COMPANY_COUNTRY,2,True,text,,1,1,Company country code field
+COMPANY_PHONE,10,False,digits,,1,3,Company phone number field
+COMPANY_FAX,10,False,digits,,1,3,Company fax number field
+COMPANY_TYPE,1,True,text,"F,S",1,1,Company type (F=Full S=Subsidiary)
+PERIODS_PER_YEAR,2,True,digits,,1,1,Number of periods per year
+FISCAL_YEAR_ENDING,2,True,digits,,2,2,Fiscal year ending month
+CLOSING_ACCOUNT,6,True,text,,1,1,Closing account number
+BASE_CURRENCY,3,True,text,,2,2,Base currency code
+EXCHANGE_ACCOUNT,6,True,text,,0,0,Exchange account number 
