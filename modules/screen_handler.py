@@ -156,22 +156,27 @@ class ScreenHandler:
         
         return True, "Valid"
     
-    def validate_all_fields(self) -> bool:
-        """Validate all screen data fields"""
+    def validate_all_fields(self) -> Tuple[bool, List[str]]:
+        """Validate all screen data fields and return status with messages"""
         logger.info("Validating all screen data fields...")
         all_valid = True
+        messages = []
         
         for field_name, value in self.screen_data.items():
             is_valid, message = self.validate_field(field_name, value)
             if not is_valid:
-                logger.error(f"VALIDATION ERROR - {message}")
+                error_msg = f"VALIDATION ERROR - {message}"
+                logger.error(error_msg)
+                messages.append(error_msg)
                 all_valid = False
             else:
                 config = self.field_config.get(field_name, {})
                 max_length = config.get('max_length', 0)
-                logger.info(f"✓ {field_name}: '{value}' ({len(value)}/{max_length} chars)")
+                success_msg = f"✓ {field_name}: '{value}' ({len(value)}/{max_length} chars)"
+                logger.info(success_msg)
+                messages.append(success_msg)
         
-        return all_valid
+        return all_valid, messages
     
     def should_auto_tab(self, field_name: str, value: str) -> bool:
         """Determine if field will auto-tab based on length"""
@@ -217,8 +222,55 @@ class ScreenHandler:
                 client.sendTab()
             logger.debug(f"Sent {tabs_needed} tabs after {field_name} (no auto-tab)")
     
-    def execute_navigation_step(self, client, step: Dict[str, Any], screen: str, **kwargs) -> bool:
-        """Execute a single navigation step"""
+    def check_for_screen_errors(self, screen: str) -> Tuple[bool, str]:
+        """Check screen content for error messages or invalid states"""
+        lines = screen.split('\n')
+        
+        # Common error patterns to check for
+        error_patterns = [
+            "Invalid",
+            "Error", 
+            "already exists",
+            "not found",
+            "unauthorized",
+            "access denied",
+            "invalid option",
+            "invalid command",
+            "invalid entry",
+            "duplicate",
+            "cannot",
+            "unable to",
+            "failed"
+        ]
+        
+        # Look for error messages in screen content
+        for line in lines:
+            line_lower = line.lower().strip()
+            for pattern in error_patterns:
+                if pattern.lower() in line_lower and line_lower:
+                    return True, f"Error detected: {line.strip()}"
+        
+        # Check for specific success patterns
+        success_patterns = [
+            "added successfully",
+            "updated successfully", 
+            "completed successfully",
+            "successful",
+            "added",
+            "updated",
+            "completed"
+        ]
+        
+        for line in lines:
+            line_lower = line.lower().strip()
+            for pattern in success_patterns:
+                if pattern.lower() in line_lower and line_lower:
+                    return False, f"Success: {line.strip()}"
+        
+        return False, "No errors detected"
+
+    def execute_navigation_step(self, client, step: Dict[str, Any], screen: str, **kwargs) -> Tuple[bool, str]:
+        """Execute a single navigation step and return result with message"""
         step_order = step['step_order']
         screen_title_contains = step['screen_title_contains']
         action_type = step['action_type']
@@ -230,8 +282,9 @@ class ScreenHandler:
         
         # Check if we're on the expected screen
         if screen_title_contains not in screen:
-            logger.info(f"Not on expected screen (looking for '{screen_title_contains}'), skipping step...")
-            return False
+            msg = f"Not on expected screen (looking for '{screen_title_contains}'), skipping step..."
+            logger.info(msg)
+            return False, msg
         
         try:
             if action_type == 'credentials':
@@ -274,16 +327,28 @@ class ScreenHandler:
                 
             elif action_type == 'form_fill':
                 # Fill the main form
-                self.fill_form(client)
-                return True  # Form filling is the final step
+                final_screen, result_msg = self.fill_form(client)
+                return True, result_msg  # Form filling is the final step
             
             # Wait for the specified time
             time.sleep(wait_time)
-            return True
+            
+            # Check the screen after action for errors
+            post_action_screen = client.getScreen()
+            has_error, error_msg = self.check_for_screen_errors(post_action_screen)
+            
+            if has_error:
+                logger.error(f"Error detected after step {step_order}: {error_msg}")
+                return False, error_msg
+            
+            success_msg = f"Step {step_order} completed successfully"
+            logger.info(success_msg)
+            return True, success_msg
             
         except Exception as e:
-            logger.error(f"Error executing step {step_order}: {str(e)}")
-            return False
+            error_msg = f"Error executing step {step_order}: {str(e)}"
+            logger.error(error_msg)
+            return False, error_msg
     
     def _save_screen_to_html(self, client, filename: str):
         """Get screen content and save it to an HTML file manually"""
@@ -335,8 +400,8 @@ class ScreenHandler:
         except Exception as e:
             logger.error(f"Error saving screen to HTML: {str(e)}")
 
-    def fill_form(self, client):
-        """Fill the main form with data"""
+    def fill_form(self, client) -> Tuple[str, str]:
+        """Fill the main form with data and return final screen with result message"""
         logger.info("Starting form fill process...")
         
         # Move to first input field
@@ -374,17 +439,27 @@ class ScreenHandler:
         # Save screen manually to HTML file
         self._save_screen_to_html(client, 'after_submission.html')
         
-        return final_screen
+        # Check result and return message
+        result_msg = self.check_result(final_screen, self.screen_data.get('company_id', ''))
+        
+        return final_screen, result_msg
     
-    def process_screen(self, client, **kwargs) -> bool:
-        """Process the entire screen flow"""
+    def process_screen(self, client, **kwargs) -> Tuple[bool, List[str]]:
+        """Process the entire screen flow and return result with messages"""
         logger.info("Starting screen processing...")
         logger.info(f"HTML files will be saved to directory: {self.output_dir}")
         
+        messages = []
+        
         # Validate all fields first
-        if not self.validate_all_fields():
-            logger.error("Field validation failed. Cannot proceed.")
-            return False
+        validation_success, validation_messages = self.validate_all_fields()
+        messages.extend(validation_messages)
+        
+        if not validation_success:
+            error_msg = "Field validation failed. Cannot proceed."
+            logger.error(error_msg)
+            messages.append(error_msg)
+            return False, messages
         
         step_number = 1
         
@@ -403,29 +478,45 @@ class ScreenHandler:
                 # Save screen manually to HTML file
                 self._save_screen_to_html(client, f'step_{step_number:02d}_{step["action_type"]}.html')
                 
+                # Check screen for errors before executing step
+                has_error, error_msg = self.check_for_screen_errors(screen)
+                if has_error:
+                    logger.error(f"Error detected on screen before step {step_number}: {error_msg}")
+                    messages.append(f"Pre-step error: {error_msg}")
+                    return False, messages
+                
                 # Execute the step
                 if step['action_type'] == 'form_fill':
                     # Final step - fill the form
-                    final_screen = self.fill_form(client)
-                    self.check_result(final_screen, kwargs.get('company_id', ''))
-                    return True
+                    final_screen, result_msg = self.fill_form(client)
+                    messages.append(result_msg)
+                    # Check if result indicates success or failure
+                    success = "SUCCESS" in result_msg or "added successfully" in result_msg.lower()
+                    return success, messages
                 else:
                     # Regular navigation step
-                    success = self.execute_navigation_step(client, step, screen, **kwargs)
+                    success, step_msg = self.execute_navigation_step(client, step, screen, **kwargs)
+                    messages.append(step_msg)
+                    
                     if not success:
-                        logger.warning(f"Step {step_number} was skipped or failed")
+                        logger.error(f"Step {step_number} failed: {step_msg}")
+                        return False, messages
                 
                 step_number += 1
                 
             except Exception as e:
-                logger.error(f"Error in step {step_number}: {str(e)}")
-                return False
+                error_msg = f"Error in step {step_number}: {str(e)}"
+                logger.error(error_msg)
+                messages.append(error_msg)
+                return False, messages
         
-        logger.info("Screen processing completed successfully!")
-        return True
+        success_msg = "Screen processing completed successfully!"
+        logger.info(success_msg)
+        messages.append(success_msg)
+        return True, messages
     
-    def check_result(self, final_screen: str, company_id: str):
-        """Check the final result of the operation"""
+    def check_result(self, final_screen: str, company_id: str) -> str:
+        """Check the final result of the operation and return result message"""
         logger.info("Final screen after submission:")
         logger.info("-" * 50)
         logger.info(final_screen)
@@ -436,31 +527,47 @@ class ScreenHandler:
         
         # Check for success or error messages
         if f"{company_id} added" in final_screen:
-            logger.info(f"SUCCESS: Company {company_id} was added successfully!")
+            result_msg = f"SUCCESS: Company {company_id} was added successfully!"
+            logger.info(result_msg)
+            return result_msg
         elif "Invalid country" in final_screen:
-            logger.error("ERROR: Invalid country code")
+            result_msg = "ERROR: Invalid country code"
+            logger.error(result_msg)
+            return result_msg
+        elif "already exists" in final_screen.lower():
+            result_msg = f"ERROR: Company {company_id} already exists"
+            logger.error(result_msg)
+            return result_msg
         elif "Invalid" in final_screen or "Error" in final_screen:
             # Check for other validation errors
             error_messages = [line.strip() for line in lines if 'Invalid' in line or 'Error' in line]
             if error_messages:
-                logger.error(f"VALIDATION ERROR: {'; '.join(error_messages)}")
+                result_msg = f"VALIDATION ERROR: {'; '.join(error_messages)}"
+                logger.error(result_msg)
+                return result_msg
             else:
                 # Look for error message in last line before function keys
                 for i, line in enumerate(lines):
                     if 'F3=Exit' in line and i > 0:
                         error_line = lines[i-1].strip()
                         if error_line:
-                            logger.error(f"ERROR: {error_line}")
-                            break
+                            result_msg = f"ERROR: {error_line}"
+                            logger.error(result_msg)
+                            return result_msg
                 else:
-                    logger.error("ERROR: Unknown validation error occurred")
+                    result_msg = "ERROR: Unknown validation error occurred"
+                    logger.error(result_msg)
+                    return result_msg
         else:
             # Look for error message in last line before function keys
             for i, line in enumerate(lines):
                 if 'F3=Exit' in line and i > 0:
                     error_line = lines[i-1].strip()
                     if error_line:
-                        logger.error(f"ERROR: {error_line}")
-                        break
+                        result_msg = f"ERROR: {error_line}"
+                        logger.error(result_msg)
+                        return result_msg
             else:
-                logger.warning("UNKNOWN: Could not determine if operation was successful. Please check the screen manually.")
+                result_msg = "UNKNOWN: Could not determine if operation was successful. Please check the screen manually."
+                logger.warning(result_msg)
+                return result_msg

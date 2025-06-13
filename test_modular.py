@@ -62,10 +62,17 @@ def test_screen_configuration(screen_name: str):
         logger.info(f"✓ Loaded {len(screen_handler.navigation_steps)} navigation steps")
         
         # Test field validation
-        if screen_handler.validate_all_fields():
+        validation_success, validation_messages = screen_handler.validate_all_fields()
+        if validation_success:
             logger.info("✓ All field validations passed")
         else:
             logger.error("✗ Field validation failed")
+            # Print validation messages
+            for msg in validation_messages:
+                if "ERROR" in msg:
+                    logger.error(msg)
+                else:
+                    logger.info(msg)
             return False
         
         # Display configuration summary

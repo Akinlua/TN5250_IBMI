@@ -8,7 +8,7 @@ Each screen can have different navigation options and company IDs.
 SCREEN_CONFIGS = {
     'company_maintenance': {
         'option': '21',
-        'company_id': '691',
+        'company_id': '694',
         'operation': 'A',  # A=Add, C=Change, D=Delete
         'data_file': 'screens/company_maintenance_data.csv',
         'config_file': 'screens/company_maintenance_config.csv',

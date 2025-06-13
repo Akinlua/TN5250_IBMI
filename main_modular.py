@@ -144,8 +144,15 @@ def main():
         )
         
         # Validate screen data
-        if not screen_handler.validate_all_fields():
+        validation_success, validation_messages = screen_handler.validate_all_fields()
+        if not validation_success:
             logger.error("Screen data validation failed. Please fix the errors above before proceeding.")
+            # Print all validation messages
+            for msg in validation_messages:
+                if "ERROR" in msg:
+                    logger.error(msg)
+                else:
+                    logger.info(msg)
             return
         
         logger.info("All validations passed successfully!")
@@ -164,7 +171,7 @@ def main():
         logger.info("Connection established. Starting screen processing...")
         
         # Process the screen
-        success = screen_handler.process_screen(
+        success, processing_messages = screen_handler.process_screen(
             client,
             username=CONNECTION_CONFIG['USERNAME'],
             password=CONNECTION_CONFIG['PASSWORD'],
@@ -172,6 +179,15 @@ def main():
             option=screen_config['option'],
             operation=screen_config['operation']
         )
+        
+        # Print all processing messages
+        for msg in processing_messages:
+            if "ERROR" in msg or "VALIDATION ERROR" in msg:
+                logger.error(msg)
+            elif "SUCCESS" in msg or "✓" in msg:
+                logger.info(msg)
+            else:
+                logger.info(msg)
         
         if success:
             logger.info("Screen processing completed successfully!")
