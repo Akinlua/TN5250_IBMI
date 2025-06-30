@@ -1,0 +1,609 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+		"name": "TN5250 REST API",
+		"description": "Complete API collection for TN5250 screen automation with company maintenance test data. Updated for dynamic company_id and operation parameters.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response has correct structure\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('status');",
+							"    pm.expect(jsonData).to.have.property('service');",
+							"    pm.expect(jsonData).to.have.property('version');",
+							"    pm.expect(jsonData.status).to.eql('healthy');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/health",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Screens",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response has screens array\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('screens');",
+							"    pm.expect(jsonData).to.have.property('count');",
+							"    pm.expect(jsonData.screens).to.be.an('array');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/screens",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"screens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Company Maintenance Screen Config",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"pm.test(\"Screen created successfully\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('message');",
+							"    pm.expect(jsonData).to.have.property('screen_name');",
+							"    pm.expect(jsonData.screen_name).to.eql('company_maintenance');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"screen_config\": {\n    \"screen_name\": \"company_maintenance\",\n    \"description\": \"Company maintenance screen for adding/editing company information\",\n    \"option\": \"21\"\n  },\n  \"field_configs\": [\n    {\n      \"field_name\": \"COMPANY_NAME\",\n      \"max_length\": 28,\n      \"required\": true,\n      \"type\": \"text\",\n      \"valid_values\": null,\n      \"tabs_needed\": 2,\n      \"tabs_needed_empty\": 2,\n      \"description\": \"Company name field\"\n    },\n    {\n      \"field_name\": \"COMPANY_ADDRESS\",\n      \"max_length\": 60,\n      \"required\": true,\n      \"type\": \"text\",\n      \"valid_values\": null,\n      \"tabs_needed\": 2,\n      \"tabs_needed_empty\": 2,\n      \"description\": \"Company address field (spans 2 lines)\"\n    },\n    {\n      \"field_name\": \"COMPANY_LOCATION\",\n      \"max_length\": 20,\n      \"required\": true,\n      \"type\": \"text\",\n      \"valid_values\": null,\n      \"tabs_needed\": 1,\n      \"tabs_needed_empty\": 1,\n      \"description\": \"Company location/city field\"\n    },\n    {\n      \"field_name\": \"COMPANY_REGION\",\n      \"max_length\": 2,\n      \"required\": true,\n      \"type\": \"text\",\n      \"valid_values\": null,\n      \"tabs_needed\": 1,\n      \"tabs_needed_empty\": 1,\n      \"description\": \"Company region/state field\"\n    },\n    {\n      \"field_name\": \"COMPANY_POSTAL_CODE\",\n      \"max_length\": 10,\n      \"required\": true,\n      \"type\": \"text\",\n      \"valid_values\": null,\n      \"tabs_needed\": 1,\n      \"tabs_needed_empty\": 1,\n      \"description\": \"Company postal/zip code field\"\n    },\n    {\n      \"field_name\": \"COMPANY_COUNTRY\",\n      \"max_length\": 2,\n      \"required\": true,\n      \"type\": \"text\",\n      \"valid_values\": null,\n      \"tabs_needed\": 1,\n      \"tabs_needed_empty\": 1,\n      \"description\": \"Company country code field\"\n    },\n    {\n      \"field_name\": \"COMPANY_PHONE\",\n      \"max_length\": 10,\n      \"required\": false,\n      \"type\": \"digits\",\n      \"valid_values\": null,\n      \"tabs_needed\": 1,\n      \"tabs_needed_empty\": 3,\n      \"description\": \"Company phone number field\"\n    },\n    {\n      \"field_name\": \"COMPANY_FAX\",\n      \"max_length\": 10,\n      \"required\": false,\n      \"type\": \"digits\",\n      \"valid_values\": null,\n      \"tabs_needed\": 1,\n      \"tabs_needed_empty\": 3,\n      \"description\": \"Company fax number field\"\n    },\n    {\n      \"field_name\": \"COMPANY_TYPE\",\n      \"max_length\": 1,\n      \"required\": true,\n      \"type\": \"text\",\n      \"valid_values\": [\"F\", \"S\"],\n      \"tabs_needed\": 1,\n      \"tabs_needed_empty\": 1,\n      \"description\": \"Company type (F=Full S=Subsidiary)\"\n    },\n    {\n      \"field_name\": \"PERIODS_PER_YEAR\",\n      \"max_length\": 2,\n      \"required\": true,\n      \"type\": \"digits\",\n      \"valid_values\": null,\n      \"tabs_needed\": 1,\n      \"tabs_needed_empty\": 1,\n      \"description\": \"Number of periods per year\"\n    },\n    {\n      \"field_name\": \"FISCAL_YEAR_ENDING\",\n      \"max_length\": 2,\n      \"required\": true,\n      \"type\": \"digits\",\n      \"valid_values\": null,\n      \"tabs_needed\": 2,\n      \"tabs_needed_empty\": 2,\n      \"description\": \"Fiscal year ending month\"\n    },\n    {\n      \"field_name\": \"CLOSING_ACCOUNT\",\n      \"max_length\": 6,\n      \"required\": true,\n      \"type\": \"text\",\n      \"valid_values\": null,\n      \"tabs_needed\": 1,\n      \"tabs_needed_empty\": 1,\n      \"description\": \"Closing account number\"\n    },\n    {\n      \"field_name\": \"BASE_CURRENCY\",\n      \"max_length\": 3,\n      \"required\": true,\n      \"type\": \"text\",\n      \"valid_values\": null,\n      \"tabs_needed\": 2,\n      \"tabs_needed_empty\": 2,\n      \"description\": \"Base currency code\"\n    },\n    {\n      \"field_name\": \"EXCHANGE_ACCOUNT\",\n      \"max_length\": 6,\n      \"required\": true,\n      \"type\": \"text\",\n      \"valid_values\": null,\n      \"tabs_needed\": 0,\n      \"tabs_needed_empty\": 0,\n      \"description\": \"Exchange account number\"\n    }\n  ],\n  \"navigation_steps\": [\n    {\n      \"step_order\": 1,\n      \"screen_title_contains\": \"Sign On\",\n      \"action_type\": \"credentials\",\n      \"action_value\": \"USERNAME,PASSWORD\",\n      \"wait_time\": 3,\n      \"description\": \"Enter login credentials\"\n    },\n    {\n      \"step_order\": 2,\n      \"screen_title_contains\": \"Press Enter to continue\",\n      \"action_type\": \"enter\",\n      \"action_value\": \"\",\n      \"wait_time\": 2,\n      \"description\": \"Press enter to continue past message screen\"\n    },\n    {\n      \"step_order\": 3,\n      \"screen_title_contains\": \"IBM i Main Menu\",\n      \"action_type\": \"command\",\n      \"action_value\": \"CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))\",\n      \"wait_time\": 3,\n      \"description\": \"Execute program call command\"\n    },\n    {\n      \"step_order\": 4,\n      \"screen_title_contains\": \"*ADMINISTRATOR\",\n      \"action_type\": \"option\",\n      \"action_value\": \"21\",\n      \"wait_time\": 3,\n      \"description\": \"Select company maintenance option\"\n    },\n    {\n      \"step_order\": 5,\n      \"screen_title_contains\": \"Company Maintenance\",\n      \"action_type\": \"option_with_id\",\n      \"action_value\": \"{OPERATION},{COMPANY_ID}\",\n      \"wait_time\": 3,\n      \"description\": \"Select operation and enter company ID (uses dynamic values)\"\n    },\n    {\n      \"step_order\": 6,\n      \"screen_title_contains\": \"Name\",\n      \"action_type\": \"form_fill\",\n      \"action_value\": \"\",\n      \"wait_time\": 1,\n      \"description\": \"Fill company details form\"\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/screens",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"screens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Company Maintenance Screen Config",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response has correct structure\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('screen_config');",
+							"    pm.expect(jsonData).to.have.property('field_configs');",
+							"    pm.expect(jsonData).to.have.property('navigation_steps');",
+							"    pm.expect(jsonData.screen_config.screen_name).to.eql('company_maintenance');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/screens/company_maintenance",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"screens",
+						"company_maintenance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Screen Data - Valid",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Validation passes\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('valid');",
+							"    pm.expect(jsonData).to.have.property('messages');",
+							"    pm.expect(jsonData.valid).to.be.true;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"screen_name\": \"company_maintenance\",\n  \"screen_data\": {\n    \"COMPANY_NAME\": \"TEST COMPANY 594\",\n    \"COMPANY_ADDRESS\": \"123 MAIN STREET\",\n    \"COMPANY_LOCATION\": \"ST CLOUD\",\n    \"COMPANY_REGION\": \"MN\",\n    \"COMPANY_POSTAL_CODE\": \"56301\",\n    \"COMPANY_COUNTRY\": \"US\",\n    \"COMPANY_PHONE\": \"\",\n    \"COMPANY_FAX\": \"\",\n    \"COMPANY_TYPE\": \"F\",\n    \"PERIODS_PER_YEAR\": \"12\",\n    \"FISCAL_YEAR_ENDING\": \"12\",\n    \"CLOSING_ACCOUNT\": \"000000\",\n    \"BASE_CURRENCY\": \"USD\",\n    \"EXCHANGE_ACCOUNT\": \"000000\"\n  }\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/validate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Screen Data - Invalid",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Validation fails\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('valid');",
+							"    pm.expect(jsonData).to.have.property('messages');",
+							"    pm.expect(jsonData.valid).to.be.false;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"screen_name\": \"company_maintenance\",\n  \"screen_data\": {\n    \"COMPANY_NAME\": \"THIS COMPANY NAME IS WAY TOO LONG AND EXCEEDS THE MAXIMUM LENGTH\",\n    \"COMPANY_ADDRESS\": \"\",\n    \"COMPANY_LOCATION\": \"\",\n    \"COMPANY_REGION\": \"TOOLONG\",\n    \"COMPANY_POSTAL_CODE\": \"\",\n    \"COMPANY_COUNTRY\": \"\",\n    \"COMPANY_PHONE\": \"NOT_DIGITS\",\n    \"COMPANY_FAX\": \"\",\n    \"COMPANY_TYPE\": \"X\",\n    \"PERIODS_PER_YEAR\": \"\",\n    \"FISCAL_YEAR_ENDING\": \"\",\n    \"CLOSING_ACCOUNT\": \"\",\n    \"BASE_CURRENCY\": \"\",\n    \"EXCHANGE_ACCOUNT\": \"\"\n  }\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/validate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Process Screen - Add Company",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response has processing result\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('success');",
+							"    pm.expect(jsonData).to.have.property('messages');",
+							"    pm.expect(jsonData).to.have.property('html_files_directory');",
+							"    pm.expect(jsonData.messages).to.be.an('array');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"screen_name\": \"company_maintenance\",\n  \"company_id\": \"594\",\n  \"operation\": \"A\",\n  \"screen_data\": {\n    \"COMPANY_NAME\": \"ACME CORPORATION\",\n    \"COMPANY_ADDRESS\": \"123 MAIN STREET\",\n    \"COMPANY_LOCATION\": \"NEW YORK\",\n    \"COMPANY_REGION\": \"NY\",\n    \"COMPANY_POSTAL_CODE\": \"10001\",\n    \"COMPANY_COUNTRY\": \"US\",\n    \"COMPANY_PHONE\": \"\",\n    \"COMPANY_FAX\": \"\",\n    \"COMPANY_TYPE\": \"F\",\n    \"PERIODS_PER_YEAR\": \"12\",\n    \"FISCAL_YEAR_ENDING\": \"12\",\n    \"CLOSING_ACCOUNT\": \"000000\",\n    \"BASE_CURRENCY\": \"USD\",\n    \"EXCHANGE_ACCOUNT\": \"000000\"\n  }\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/process",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Process Screen - Change Company",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response has processing result\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('success');",
+							"    pm.expect(jsonData).to.have.property('messages');",
+							"    pm.expect(jsonData).to.have.property('html_files_directory');",
+							"    pm.expect(jsonData.messages).to.be.an('array');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"screen_name\": \"company_maintenance\",\n  \"company_id\": \"594\",\n  \"operation\": \"C\",\n  \"screen_data\": {\n    \"COMPANY_NAME\": \"ACME CORP UPDATED\",\n    \"COMPANY_ADDRESS\": \"456 UPDATED STREET\",\n    \"COMPANY_LOCATION\": \"BOSTON\",\n    \"COMPANY_REGION\": \"MA\",\n    \"COMPANY_POSTAL_CODE\": \"02101\",\n    \"COMPANY_COUNTRY\": \"US\",\n    \"COMPANY_PHONE\": \"6175551234\",\n    \"COMPANY_FAX\": \"6175555678\",\n    \"COMPANY_TYPE\": \"F\",\n    \"PERIODS_PER_YEAR\": \"12\",\n    \"FISCAL_YEAR_ENDING\": \"12\",\n    \"CLOSING_ACCOUNT\": \"000000\",\n    \"BASE_CURRENCY\": \"USD\",\n    \"EXCHANGE_ACCOUNT\": \"000000\"\n  }\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/process",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Process Screen - Delete Company",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response has processing result\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('success');",
+							"    pm.expect(jsonData).to.have.property('messages');",
+							"    pm.expect(jsonData).to.have.property('html_files_directory');",
+							"    pm.expect(jsonData.messages).to.be.an('array');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"screen_name\": \"company_maintenance\",\n  \"company_id\": \"594\",\n  \"operation\": \"D\",\n  \"screen_data\": {}\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/process",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Company Maintenance Screen Config",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Screen updated successfully\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('message');",
+							"    pm.expect(jsonData).to.have.property('screen_name');",
+							"    pm.expect(jsonData.screen_name).to.eql('company_maintenance');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"screen_config\": {\n    \"screen_name\": \"company_maintenance\",\n    \"description\": \"Updated company maintenance screen for adding/editing company information\",\n    \"option\": \"21\"\n  },\n  \"field_configs\": [\n    {\n      \"field_name\": \"COMPANY_NAME\",\n      \"max_length\": 30,\n      \"required\": true,\n      \"type\": \"text\",\n      \"valid_values\": null,\n      \"tabs_needed\": 2,\n      \"tabs_needed_empty\": 2,\n      \"description\": \"Updated company name field\"\n    },\n    {\n      \"field_name\": \"COMPANY_ADDRESS\",\n      \"max_length\": 60,\n      \"required\": true,\n      \"type\": \"text\",\n      \"valid_values\": null,\n      \"tabs_needed\": 2,\n      \"tabs_needed_empty\": 2,\n      \"description\": \"Company address field (spans 2 lines)\"\n    }\n  ],\n  \"navigation_steps\": [\n    {\n      \"step_order\": 1,\n      \"screen_title_contains\": \"Sign On\",\n      \"action_type\": \"credentials\",\n      \"action_value\": \"USERNAME,PASSWORD\",\n      \"wait_time\": 3,\n      \"description\": \"Enter login credentials\"\n    },\n    {\n      \"step_order\": 2,\n      \"screen_title_contains\": \"Name\",\n      \"action_type\": \"form_fill\",\n      \"action_value\": \"\",\n      \"wait_time\": 1,\n      \"description\": \"Fill company details form\"\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/screens/company_maintenance",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"screens",
+						"company_maintenance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Test - Get Non-existent Screen",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"",
+							"pm.test(\"Error response structure\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('error');",
+							"    pm.expect(jsonData).to.have.property('details');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/screens/non_existent_screen",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"screens",
+						"non_existent_screen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Test - Process Non-existent Screen",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"",
+							"pm.test(\"Error response structure\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('error');",
+							"    pm.expect(jsonData).to.have.property('details');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"screen_name\": \"non_existent_screen\",\n  \"company_id\": \"999\",\n  \"operation\": \"A\",\n  \"screen_data\": {\n    \"test_field\": \"test_value\"\n  }\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/process",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Company Maintenance Screen Config",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Screen deleted successfully\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('message');",
+							"    pm.expect(jsonData).to.have.property('screen_name');",
+							"    pm.expect(jsonData.screen_name).to.eql('company_maintenance');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/screens/company_maintenance",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"screens",
+						"company_maintenance"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5003",
+			"type": "string"
+		}
+	]
+} 

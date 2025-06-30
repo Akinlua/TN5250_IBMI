@@ -1,0 +1,14 @@
+{
+  "screen_name": "company_maintenance", 
+  "company_id": "594",
+  "operation": "A",
+  "screen_data": {
+    "company_id": "594",
+    "company_name": "ACME Corporation",
+    "address_line_1": "123 Main Street",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "10001",
+    "country": "US"
+  }
+} 

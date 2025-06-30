@@ -3,5 +3,6 @@ company_maintenance,1,Sign On,credentials,"USERNAME,PASSWORD",3,Enter login cred
 company_maintenance,2,Press Enter to continue,enter,,2,Press enter to continue past message screen
 company_maintenance,3,IBM i Main Menu,command,CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb')),3,Execute program call command
 company_maintenance,4,*ADMINISTRATOR,option,21,3,Select company maintenance option
+
 company_maintenance,5,Company Maintenance,option_with_id,"A,{COMPANY_ID}",3,Select add option and enter company ID
 company_maintenance,6,Name,form_fill,,1,Fill company details form 

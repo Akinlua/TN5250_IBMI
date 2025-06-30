@@ -1,1 +1,15 @@
+# Core dependencies
+flask
+flask-cors
+pydantic
+python-dotenv
+
+# Database dependencies
+sqlalchemy
+psycopg2-binary
+
+# TN5250 interaction dependencies
 p5250
+
+# Utility dependencies
+requests
