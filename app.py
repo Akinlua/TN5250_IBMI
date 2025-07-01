@@ -288,8 +288,7 @@ def process_screen():
             # Process the screen
             success, messages = api_handler.process_screen(
                 client,
-                company_id=request_data.company_id,
-                operation=request_data.operation,
+                screen_inputs=request_data.screen_inputs,
                 username=CONNECTION_CONFIG['USERNAME'],
                 password=CONNECTION_CONFIG['PASSWORD']
             )

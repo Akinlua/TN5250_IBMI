@@ -1,0 +1,47 @@
+{
+  "examples": {
+    "company_maintenance": {
+      "description": "Company Maintenance (AC010) - Option + Company ID",
+      "screen_inputs": {
+        "operation": "A",
+        "company_id": "594"
+      },
+      "navigation_example": "action_value: \"{OPERATION},{COMPANY_ID}\""
+    },
+    "department_maintenance": {
+      "description": "Department Number Maintenance (GL020) - Option + Number + Type",
+      "screen_inputs": {
+        "operation": "A",
+        "number": "100",
+        "type": "A"
+      },
+      "navigation_example": "action_value: \"{OPERATION},{NUMBER},{TYPE}\""
+    },
+    "chart_of_accounts": {
+      "description": "Chart of Accounts Maintenance (GL100) - Option + Account",
+      "screen_inputs": {
+        "operation": "A",
+        "account": "100000"
+      },
+      "navigation_example": "action_value: \"{OPERATION},{ACCOUNT}\""
+    },
+    "custom_screen_example": {
+      "description": "Example of a screen with many inputs",
+      "screen_inputs": {
+        "operation": "C",
+        "company_id": "001",
+        "location": "NY",
+        "department": "FIN",
+        "year": "2025"
+      },
+      "navigation_example": "action_value: \"{OPERATION},{COMPANY_ID},{LOCATION},{DEPARTMENT},{YEAR}\""
+    }
+  },
+  "usage_notes": [
+    "screen_inputs can contain any number of key-value pairs",
+    "Placeholder names in navigation steps are case-insensitive",
+    "Example: {COMPANY_ID} will match screen_inputs.company_id",
+    "Missing placeholders will log a warning but won't fail the process",
+    "This system supports any screen configuration without code changes"
+  ]
+} 

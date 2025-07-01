@@ -2627,3 +2627,221 @@ INFO: p3270.p3270 - 2025-06-30 16:00:39,740 - 28575: Send the following text: [5
 INFO: p3270.p3270 - 2025-06-30 16:00:39,740 - 28575: Sending Enter key
 INFO: p3270.p3270 - 2025-06-30 16:00:43,058 - 28575: Getting the screen content in text format
 INFO: p3270.p3270 - 2025-06-30 16:00:43,071 - 28575: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-07-01 11:11:49,412 - 66852: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-07-01 11:12:41,379 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:12:41,381 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:12:41,385 - 66852: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-07-01 11:12:41,386 - 66852: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-07-01 11:12:41,387 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:12:41,387 - 66852: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-07-01 11:12:41,388 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:12:45,848 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:12:45,848 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:12:45,849 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:12:45,849 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:12:52,481 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:12:52,482 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:12:52,482 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:12:52,483 - 66852: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-07-01 11:12:52,483 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:13:00,601 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:13:00,604 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:13:00,604 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:13:00,605 - 66852: Send the following text: [21]
+INFO: p3270.p3270 - 2025-07-01 11:13:00,605 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:13:10,258 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:13:10,259 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:13:10,260 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:13:10,260 - 66852: Send the following text: [A]
+INFO: p3270.p3270 - 2025-07-01 11:13:10,260 - 66852: Send the following text: [594]
+INFO: p3270.p3270 - 2025-07-01 11:13:10,261 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:13:14,240 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:13:14,243 - 66852: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-07-01 11:24:14,946 - 66852: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-07-01 11:24:22,982 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:22,983 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:22,984 - 66852: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-07-01 11:24:22,984 - 66852: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-07-01 11:24:22,984 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:22,984 - 66852: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-07-01 11:24:22,985 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:24:27,624 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:27,626 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:27,627 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:27,627 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:24:30,752 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:30,753 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:30,754 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:30,754 - 66852: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-07-01 11:24:30,754 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:24:34,607 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:34,608 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:34,609 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:34,609 - 66852: Send the following text: [21]
+INFO: p3270.p3270 - 2025-07-01 11:24:34,610 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:24:38,495 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:38,496 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:38,497 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:38,498 - 66852: Send the following text: [A]
+INFO: p3270.p3270 - 2025-07-01 11:24:38,498 - 66852: Send the following text: [595]
+INFO: p3270.p3270 - 2025-07-01 11:24:38,498 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:24:43,129 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:43,132 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:43,133 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:43,133 - 66852: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-07-01 11:24:43,133 - 66852: Send the following text: [TEST COMPANY 594]
+INFO: p3270.p3270 - 2025-07-01 11:24:43,134 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,134 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,134 - 66852: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-07-01 11:24:43,134 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,134 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,134 - 66852: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-07-01 11:24:43,134 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Send the following text: [US]
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Send the following text: [F]
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Send the following text: [12]
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Send the following text: [12]
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-07-01 11:24:43,135 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:24:43,136 - 66852: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-07-01 11:24:43,136 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:43,136 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:43,137 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:24:45,106 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:45,107 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:24:45,108 - 66852: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-07-01 11:33:16,337 - 66852: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-07-01 11:33:27,662 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:27,665 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:27,667 - 66852: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-07-01 11:33:27,668 - 66852: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-07-01 11:33:27,669 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:33:27,669 - 66852: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-07-01 11:33:27,672 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:33:32,450 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:32,451 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:32,452 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:32,454 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:33:39,136 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:39,137 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:39,138 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:39,139 - 66852: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-07-01 11:33:39,140 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:33:44,131 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:44,132 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:44,133 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:44,135 - 66852: Send the following text: [21]
+INFO: p3270.p3270 - 2025-07-01 11:33:44,135 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:33:48,853 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:48,856 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:48,857 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:48,859 - 66852: Send the following text: []
+INFO: p3270.p3270 - 2025-07-01 11:33:48,861 - 66852: Send the following text: []
+INFO: p3270.p3270 - 2025-07-01 11:33:48,862 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:33:52,995 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:33:52,998 - 66852: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-07-01 11:50:46,703 - 66852: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-07-01 11:50:56,077 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:50:56,079 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:50:56,081 - 66852: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-07-01 11:50:56,082 - 66852: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-07-01 11:50:56,083 - 66852: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:50:56,083 - 66852: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-07-01 11:50:56,083 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:51:01,623 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:01,626 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:01,627 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:01,628 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:51:04,666 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:04,669 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:04,670 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:04,674 - 66852: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-07-01 11:51:04,675 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:51:08,080 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:08,082 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:08,083 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:08,084 - 66852: Send the following text: [21]
+INFO: p3270.p3270 - 2025-07-01 11:51:08,085 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:51:12,817 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:12,820 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:12,821 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:12,825 - 66852: Send the following text: []
+INFO: p3270.p3270 - 2025-07-01 11:51:12,825 - 66852: Send the following text: []
+INFO: p3270.p3270 - 2025-07-01 11:51:12,825 - 66852: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:51:17,220 - 66852: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:51:17,223 - 66852: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-07-01 11:59:05,662 - 68691: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-07-01 11:59:12,369 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:12,370 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:12,371 - 68691: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-07-01 11:59:12,372 - 68691: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-07-01 11:59:12,372 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:12,372 - 68691: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-07-01 11:59:12,372 - 68691: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:59:16,398 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:16,415 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:16,430 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:16,435 - 68691: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:59:18,720 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:18,723 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:18,724 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:18,725 - 68691: Send the following text: [CALL PGM(LOADERP) PARM(('*ADMIN') ('AdminAaBb'))]
+INFO: p3270.p3270 - 2025-07-01 11:59:18,725 - 68691: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:59:22,307 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:22,349 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:22,354 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:22,358 - 68691: Send the following text: [21]
+INFO: p3270.p3270 - 2025-07-01 11:59:22,359 - 68691: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:59:26,546 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:26,548 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:26,549 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:26,553 - 68691: Send the following text: [A]
+INFO: p3270.p3270 - 2025-07-01 11:59:26,554 - 68691: Send the following text: [596]
+INFO: p3270.p3270 - 2025-07-01 11:59:26,554 - 68691: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:59:29,785 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:29,786 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:29,792 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:29,794 - 68691: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-07-01 11:59:29,794 - 68691: Send the following text: [TEST COMPANY 594]
+INFO: p3270.p3270 - 2025-07-01 11:59:29,795 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,795 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,795 - 68691: Send the following text: [123 MAIN STREET]
+INFO: p3270.p3270 - 2025-07-01 11:59:29,795 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,795 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,795 - 68691: Send the following text: [ST CLOUD]
+INFO: p3270.p3270 - 2025-07-01 11:59:29,795 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,795 - 68691: Send the following text: [MN]
+INFO: p3270.p3270 - 2025-07-01 11:59:29,795 - 68691: Send the following text: [56301]
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Send the following text: [US]
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Send the following text: [F]
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Send the following text: [12]
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Send the following text: [12]
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-07-01 11:59:29,796 - 68691: Send the following text: [USD]
+INFO: p3270.p3270 - 2025-07-01 11:59:29,797 - 68691: Sending tab to remote host
+INFO: p3270.p3270 - 2025-07-01 11:59:29,797 - 68691: Send the following text: [000000]
+INFO: p3270.p3270 - 2025-07-01 11:59:29,797 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:29,798 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:29,799 - 68691: Sending Enter key
+INFO: p3270.p3270 - 2025-07-01 11:59:31,058 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:31,059 - 68691: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-07-01 11:59:31,063 - 68691: Disconnect from host (10.150.0.59)

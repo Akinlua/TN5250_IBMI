@@ -1,7 +1,9 @@
 {
   "screen_name": "company_maintenance", 
-  "company_id": "594",
-  "operation": "A",
+  "screen_inputs": {
+    "operation": "A",
+    "company_id": "594"
+  },
   "screen_data": {
     "company_id": "594",
     "company_name": "ACME Corporation",

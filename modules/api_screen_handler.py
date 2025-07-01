@@ -270,17 +270,30 @@ class ApiScreenHandler:
                 logger.info(f"Selected option: {action_value}")
                 
             elif action_type == 'option_with_id':
-                # Select option and enter ID (e.g., "A,{COMPANY_ID}" or "{OPERATION},{COMPANY_ID}")
+                # Select option and enter ID - now supports flexible sequential inputs
+                # Examples: "A,{INPUT1}", "{INPUT1},{INPUT2}", "{INPUT1},{INPUT2},{INPUT3}"
                 parts = action_value.split(',')
                 
-                # Handle placeholders
+                # Handle placeholders using screen_inputs from kwargs
+                screen_inputs = kwargs.get('screen_inputs', {})
+                screen_inputs_values = list(screen_inputs.values()) if screen_inputs else []
+                
                 processed_parts = []
+                input_index = 0
+                
                 for part in parts:
-                    if part == '{COMPANY_ID}':
-                        processed_parts.append(kwargs.get('company_id', ''))
-                    elif part == '{OPERATION}':
-                        processed_parts.append(kwargs.get('operation', ''))
+                    # Check if it's a placeholder
+                    if part.startswith('{') and part.endswith('}'):
+                        # Use sequential values from screen_inputs
+                        if input_index < len(screen_inputs_values):
+                            placeholder_value = screen_inputs_values[input_index]
+                            input_index += 1
+                        else:
+                            placeholder_value = ''
+                            logger.warning(f"No value available for placeholder {part} at position {input_index}")
+                        processed_parts.append(placeholder_value)
                     else:
+                        # Static value, use as-is
                         processed_parts.append(part)
                 
                 # Send each part
@@ -410,37 +423,24 @@ class ApiScreenHandler:
         
         return final_screen, result_msg
     
-    def process_screen(self, client, company_id: str = None, operation: str = None, **kwargs) -> Tuple[bool, List[str]]:
+    def process_screen(self, client, screen_inputs: Dict[str, str] = None, **kwargs) -> Tuple[bool, List[str]]:
         """Process the entire screen flow and return result with messages
         
         Args:
             client: The TN5250 client
-            company_id: The company ID to use for this operation (overrides screen_data)
-            operation: The operation type (A=Add, C=Change, D=Delete, etc.)
+            screen_inputs: Dynamic input values for the screen (operation, company_id, account, etc.)
             **kwargs: Additional parameters like username, password, etc.
         """
         logger.info("Starting screen processing...")
         logger.info(f"HTML files will be saved to directory: {self.output_directory}")
         
-        # Use provided company_id and operation, or fall back to screen_data/config
-        effective_company_id = company_id or self.screen_data.get('company_id') or self.screen_config.get('company_id')
-        effective_operation = operation or self.screen_data.get('operation') or self.screen_config.get('operation')
+        # Use provided screen_inputs or fall back to empty dict
+        effective_screen_inputs = screen_inputs or {}
         
-        if not effective_company_id:
-            error_msg = "No company_id provided in parameters, screen_data, or configuration"
-            logger.error(error_msg)
-            return False, [error_msg]
+        logger.info(f"Using screen inputs: {effective_screen_inputs}")
         
-        if not effective_operation:
-            error_msg = "No operation provided in parameters, screen_data, or configuration"
-            logger.error(error_msg)
-            return False, [error_msg]
-        
-        logger.info(f"Using company_id: {effective_company_id}, operation: {effective_operation}")
-        
-        # Add effective values to kwargs for navigation steps
-        kwargs['company_id'] = effective_company_id
-        kwargs['operation'] = effective_operation
+        # Add screen_inputs to kwargs for navigation steps
+        kwargs['screen_inputs'] = effective_screen_inputs
         
         messages = []
         
@@ -481,7 +481,7 @@ class ApiScreenHandler:
                 # Execute the step
                 if step['action_type'] == 'form_fill':
                     # Final step - fill the form
-                    final_screen, result_msg = self.fill_form(client, effective_company_id)
+                    final_screen, result_msg = self.fill_form(client, effective_screen_inputs.get('company_id'))
                     messages.append(result_msg)
                     # Check if result indicates success or failure
                     success = "SUCCESS" in result_msg or "added successfully" in result_msg.lower()

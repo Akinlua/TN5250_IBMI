@@ -38,9 +38,8 @@ class CreateScreenConfigRequest(BaseModel):
 
 class ProcessScreenRequest(BaseModel):
     screen_name: str
-    screen_data: Dict[str, str]  # field_name -> value mapping
-    company_id: str  # Dynamic per request
-    operation: str   # Dynamic per request (A=Add, C=Change, D=Delete, etc.)
+    screen_data: Dict[str, str]  # field_name -> value mapping for form fields
+    screen_inputs: Dict[str, str]  # Dynamic screen inputs (operation, company_id, account, etc.)
 
 class ValidateScreenRequest(BaseModel):
     screen_name: str
