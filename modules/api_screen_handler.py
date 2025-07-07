@@ -181,6 +181,11 @@ class ApiScreenHandler:
         """Check screen content for error messages or invalid states"""
         lines = screen.split('\n')
         
+        # Check for reactivation prompts - these are not errors
+        for line in lines:
+            if "reactivate?" in line.lower() and ("y/n" in line.lower() or "(y/n)" in line.lower()):
+                return False, "Reactivation prompt detected (not an error)"
+        
         # Common error patterns to check for
         error_patterns = [
             "Invalid",
@@ -203,6 +208,9 @@ class ApiScreenHandler:
             line_lower = line.lower().strip()
             for pattern in error_patterns:
                 if pattern.lower() in line_lower and line_lower:
+                    # Skip "inactive" if it's part of a reactivation prompt
+                    if pattern.lower() == "invalid" and "inactive" in line_lower and "reactivate" in screen.lower():
+                        continue
                     return True, f"Error detected: {line.strip()}"
         
         # Check for specific success patterns
@@ -223,6 +231,21 @@ class ApiScreenHandler:
                     return False, f"Success: {line.strip()}"
         
         return False, "No errors detected"
+
+    def handle_reactivation_prompt(self, client, screen: str) -> Tuple[bool, str]:
+        """Handle reactivation prompts by automatically selecting 'Y'"""
+        lines = screen.split('\n')
+        
+        # Look for reactivation prompt
+        for line in lines:
+            if "reactivate?" in line.lower() and ("y/n" in line.lower() or "(y/n)" in line.lower()):
+                logger.info("Detected reactivation prompt, selecting 'Y' to reactivate")
+                client.sendText("Y")
+                client.sendEnter()
+                time.sleep(2)  # Wait for processing
+                return True, "Reactivation confirmed"
+        
+        return False, "No reactivation prompt found"
 
     def execute_navigation_step(self, client, step: Dict[str, Any], screen: str, **kwargs) -> Tuple[bool, str]:
         """Execute a single navigation step and return result with message"""
@@ -308,11 +331,29 @@ class ApiScreenHandler:
                 final_screen, result_msg = self.fill_form(client, kwargs.get('company_id'))
                 return True, result_msg  # Form filling is the final step
             
+            elif action_type == 'confirm_prompt':
+                # Handle Y/N confirmation prompts
+                # action_value should be 'Y' or 'N'
+                response = action_value.upper() if action_value else 'Y'
+                client.sendText(response)
+                client.sendEnter()
+                logger.info(f"Responded to prompt with: {response}")
+            
             # Wait for the specified time
             time.sleep(wait_time)
             
-            # Check the screen after action for errors
+            # Check the screen after action
             post_action_screen = client.getScreen()
+            
+            # First check if there's a reactivation prompt and handle it automatically
+            handled_reactivation, reactivation_msg = self.handle_reactivation_prompt(client, post_action_screen)
+            if handled_reactivation:
+                logger.info(f"Handled reactivation prompt: {reactivation_msg}")
+                # Get the screen again after handling reactivation
+                post_action_screen = client.getScreen()
+                time.sleep(1)  # Small delay after reactivation
+            
+            # Now check for actual errors
             has_error, error_msg = self.check_for_screen_errors(post_action_screen)
             
             if has_error:
@@ -320,6 +361,8 @@ class ApiScreenHandler:
                 return False, error_msg
             
             success_msg = f"Step {step_order} completed successfully"
+            if handled_reactivation:
+                success_msg += f" (with reactivation: {reactivation_msg})"
             logger.info(success_msg)
             return True, success_msg
             
