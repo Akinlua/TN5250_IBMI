@@ -67,8 +67,8 @@ atexit.register(exit_handler)
 # ------------------------- Configuration -------------------------
 # IBM i Connection Settings
 HOST = "10.150.0.59"       # IP address of the IBM i system
-PORT = 23                  # TN5250 port (typically 23 for non-SSL, 992 for SSL)
-USE_SSL = False            # Set to True to use SSL/TLS for secure connection
+PORT = 992                  # TN5250 port (typically 23 for non-SSL, 992 for SSL)
+USE_SSL = True            # Set to True to use SSL/TLS for secure connection
 
 # Authentication
 USERNAME = "QPGMR"         # IBM i username

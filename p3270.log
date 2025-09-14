@@ -3081,3 +3081,29 @@ INFO: p3270.p3270 - 2025-07-07 22:19:04,213 - 1164: Sending Enter key
 INFO: p3270.p3270 - 2025-07-07 22:19:06,048 - 1164: Getting the screen content in text format
 INFO: p3270.p3270 - 2025-07-07 22:19:06,056 - 1164: Getting the screen content in text format
 INFO: p3270.p3270 - 2025-07-07 22:19:06,081 - 1164: Disconnect from host (10.150.0.59)
+INFO: p3270.p3270 - 2025-09-14 14:51:53,417 - 54993: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-09-14 14:52:01,830 - 54993: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-09-14 14:52:01,832 - 54993: Save an 'html' screen to file [screen]
+INFO: p3270.p3270 - 2025-09-14 14:52:01,834 - 54993: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-09-14 14:52:01,835 - 54993: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-09-14 14:52:01,835 - 54993: Sending tab to remote host
+INFO: p3270.p3270 - 2025-09-14 14:52:01,835 - 54993: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-09-14 14:52:01,836 - 54993: Sending Enter key
+INFO: p3270.p3270 - 2025-09-14 14:52:05,749 - 54993: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-09-14 14:52:05,750 - 54993: Save an 'html' screen to file [02_message.html]
+INFO: p3270.p3270 - 2025-09-14 14:52:05,752 - 54993: Sending Enter key
+INFO: p3270.p3270 - 2025-09-14 21:56:27,884 - 66666: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-09-14 21:56:31,546 - 66666: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-09-14 21:56:35,048 - 66666: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-09-14 21:56:38,545 - 66666: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-09-14 21:57:29,264 - 66934: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-09-14 21:57:32,934 - 66934: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-09-14 21:57:36,441 - 66934: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-09-14 21:58:08,295 - 67035: Connect to host [10.150.0.59] with no LUName
+INFO: p3270.p3270 - 2025-09-14 21:58:15,985 - 67035: Getting the screen content in text format
+INFO: p3270.p3270 - 2025-09-14 21:58:15,986 - 67035: Save an 'html' screen to file [screen]
+INFO: p3270.p3270 - 2025-09-14 21:58:15,989 - 67035: Move cursor to the first input field
+INFO: p3270.p3270 - 2025-09-14 21:58:15,990 - 67035: Send the following text: [QPGMR]
+INFO: p3270.p3270 - 2025-09-14 21:58:15,990 - 67035: Sending tab to remote host
+INFO: p3270.p3270 - 2025-09-14 21:58:15,990 - 67035: Send the following text: [AUMTQPgm]
+INFO: p3270.p3270 - 2025-09-14 21:58:15,991 - 67035: Sending Enter key

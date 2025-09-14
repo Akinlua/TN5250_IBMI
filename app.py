@@ -245,6 +245,19 @@ def process_screen():
         # Validate request data
         request_data = ProcessScreenRequest(**request.json)
         
+        # Save or update screen data submission
+        try:
+            saved_submission = db_service.save_screen_data_submission(
+                screen_name=request_data.screen_name,
+                screen_inputs=request_data.screen_inputs,
+                screen_data=request_data.screen_data,
+                submission_id=request_data.id  # None for new submissions
+            )
+            logger.info(f"Saved screen data submission: {saved_submission['id']}")
+        except Exception as save_error:
+            logger.warning(f"Failed to save screen data submission: {str(save_error)}")
+            # Continue with processing even if save fails
+        
         # Get screen configuration
         result = db_service.get_screen_config(request_data.screen_name)
         if not result:
@@ -296,7 +309,8 @@ def process_screen():
             response = ProcessScreenResponse(
                 success=success,
                 messages=messages,
-                html_files_directory=api_handler.output_directory
+                html_files_directory=api_handler.output_directory,
+                submission_id=saved_submission.get('id') if 'saved_submission' in locals() else None
             )
             return jsonify(response.dict()), 200
             
@@ -308,6 +322,50 @@ def process_screen():
         logger.error(f"Error processing screen: {str(e)}")
         error_response = ErrorResponse(
             error="Failed to process screen",
+            details=str(e)
+        )
+        return jsonify(error_response.dict()), 500
+
+@app.route('/api/submissions', methods=['GET'])
+def get_screen_data_submissions():
+    """Get all screen data submissions or filter by screen name"""
+    try:
+        screen_name = request.args.get('screen_name')
+        submissions = db_service.get_screen_data_submissions(screen_name=screen_name)
+        
+        return jsonify({
+            "submissions": submissions,
+            "count": len(submissions),
+            "screen_name": screen_name
+        }), 200
+        
+    except Exception as e:
+        logger.error(f"Error retrieving screen data submissions: {str(e)}")
+        error_response = ErrorResponse(
+            error="Failed to retrieve screen data submissions",
+            details=str(e)
+        )
+        return jsonify(error_response.dict()), 500
+
+@app.route('/api/submissions/<int:submission_id>', methods=['GET'])
+def get_screen_data_submission(submission_id):
+    """Get a specific screen data submission by ID"""
+    try:
+        submission = db_service.get_screen_data_submission_by_id(submission_id)
+        
+        if not submission:
+            error_response = ErrorResponse(
+                error="Submission not found",
+                details=f"Screen data submission with ID {submission_id} does not exist"
+            )
+            return jsonify(error_response.dict()), 404
+        
+        return jsonify(submission), 200
+        
+    except Exception as e:
+        logger.error(f"Error retrieving screen data submission {submission_id}: {str(e)}")
+        error_response = ErrorResponse(
+            error="Failed to retrieve screen data submission",
             details=str(e)
         )
         return jsonify(error_response.dict()), 500

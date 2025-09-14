@@ -38,8 +38,8 @@ SCREEN_CONFIGS = {
 # Connection settings
 CONNECTION_CONFIG = {
     'HOST': "10.150.0.59",
-    'PORT': 23,
-    'USE_SSL': False,
+    'PORT': 992,
+    'USE_SSL': True,
     'USERNAME': "QPGMR",
     'PASSWORD': "AUMTQPgm",
     'PREFERRED_MODEL': "3279-2",

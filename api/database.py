@@ -12,8 +12,9 @@ from typing import List, Dict, Optional, Tuple
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy.exc import IntegrityError, SQLAlchemyError
+from datetime import datetime
 
-from .models import Base, ScreenConfig, FieldConfig, NavigationStep
+from .models import Base, ScreenConfig, FieldConfig, NavigationStep, ScreenDataSubmission
 from .schemas import ScreenConfigSchema, FieldConfigSchema, NavigationStepSchema
 
 logger = logging.getLogger(__name__)
@@ -279,5 +280,80 @@ class DatabaseService:
             session.rollback()
             logger.error(f"Error deleting screen configuration: {str(e)}")
             return False
+        finally:
+            session.close() 
+
+    def save_screen_data_submission(self, screen_name: str, screen_inputs: dict, screen_data: dict, submission_id: int = None) -> dict:
+        """Save or update a screen data submission"""
+        session = self.get_session()
+        
+        try:
+            if submission_id:
+                # Update existing submission
+                submission = session.query(ScreenDataSubmission).filter_by(id=submission_id).first()
+                if not submission:
+                    raise ValueError(f"Screen data submission with ID {submission_id} not found")
+                
+                submission.screen_name = screen_name
+                submission.screen_inputs = screen_inputs
+                submission.screen_data = screen_data
+                submission.updated_at = datetime.utcnow()
+                
+                session.commit()
+                logger.info(f"Updated screen data submission ID {submission_id}")
+                return submission.dict()
+            else:
+                # Create new submission
+                submission = ScreenDataSubmission(
+                    screen_name=screen_name,
+                    screen_inputs=screen_inputs,
+                    screen_data=screen_data
+                )
+                
+                session.add(submission)
+                session.commit()
+                session.refresh(submission)
+                logger.info(f"Created new screen data submission ID {submission.id}")
+                return submission.dict()
+                
+        except Exception as e:
+            session.rollback()
+            logger.error(f"Error saving screen data submission: {str(e)}")
+            raise
+        finally:
+            session.close()
+
+    def get_screen_data_submissions(self, screen_name: str = None) -> list:
+        """Retrieve screen data submissions, optionally filtered by screen name"""
+        session = self.get_session()
+        
+        try:
+            query = session.query(ScreenDataSubmission)
+            
+            if screen_name:
+                query = query.filter_by(screen_name=screen_name)
+            
+            submissions = query.order_by(ScreenDataSubmission.created_at.desc()).all()
+            return [submission.dict() for submission in submissions]
+            
+        except Exception as e:
+            logger.error(f"Error retrieving screen data submissions: {str(e)}")
+            raise
+        finally:
+            session.close()
+
+    def get_screen_data_submission_by_id(self, submission_id: int) -> dict:
+        """Retrieve a specific screen data submission by ID"""
+        session = self.get_session()
+        
+        try:
+            submission = session.query(ScreenDataSubmission).filter_by(id=submission_id).first()
+            if not submission:
+                return None
+            return submission.dict()
+            
+        except Exception as e:
+            logger.error(f"Error retrieving screen data submission {submission_id}: {str(e)}")
+            raise
         finally:
             session.close() 

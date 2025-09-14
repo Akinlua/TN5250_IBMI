@@ -5,7 +5,7 @@ This module defines the database models for storing screen configurations,
 field configurations, and navigation steps using SQLAlchemy ORM.
 """
 
-from sqlalchemy import Column, Integer, String, Boolean, DateTime, Text, ForeignKey
+from sqlalchemy import Column, Integer, String, Boolean, DateTime, Text, ForeignKey, JSON
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
@@ -104,6 +104,28 @@ class NavigationStep(Base):
             'action_value': self.action_value,
             'wait_time': self.wait_time,
             'description': self.description,
+            'created_at': self.created_at.isoformat() if self.created_at else None,
+            'updated_at': self.updated_at.isoformat() if self.updated_at else None
+        } 
+
+class ScreenDataSubmission(Base):
+    """Model for storing screen data submissions"""
+    __tablename__ = 'screen_data_submissions'
+    
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    screen_name = Column(String(50), nullable=False, index=True)
+    screen_inputs = Column(JSON, nullable=True)  # Dynamic inputs like operation, company_id, etc.
+    screen_data = Column(JSON, nullable=False)   # Form data
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    
+    def dict(self):
+        """Return dictionary representation of the model"""
+        return {
+            'id': self.id,
+            'screen_name': self.screen_name,
+            'screen_inputs': self.screen_inputs,
+            'screen_data': self.screen_data,
             'created_at': self.created_at.isoformat() if self.created_at else None,
             'updated_at': self.updated_at.isoformat() if self.updated_at else None
         } 

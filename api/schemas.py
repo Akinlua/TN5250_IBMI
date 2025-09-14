@@ -37,9 +37,18 @@ class CreateScreenConfigRequest(BaseModel):
     navigation_steps: List[NavigationStepSchema]
 
 class ProcessScreenRequest(BaseModel):
+    id: Optional[int] = None  # Optional ID for update operations
     screen_name: str
-    screen_data: Dict[str, str]  # field_name -> value mapping for form fields
     screen_inputs: Dict[str, str]  # Dynamic screen inputs (operation, company_id, account, etc.)
+    screen_data: Dict[str, str]    # Form field data
+
+class ScreenDataSubmissionResponse(BaseModel):
+    id: int
+    screen_name: str
+    screen_inputs: Optional[Dict[str, str]]
+    screen_data: Dict[str, str]
+    created_at: str
+    updated_at: str
 
 class ValidateScreenRequest(BaseModel):
     screen_name: str
@@ -49,6 +58,7 @@ class ProcessScreenResponse(BaseModel):
     success: bool
     messages: List[str]
     html_files_directory: Optional[str] = None
+    submission_id: Optional[int] = None  # ID of the saved screen data submission
 
 class ValidateScreenResponse(BaseModel):
     valid: bool

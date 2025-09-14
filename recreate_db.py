@@ -1,26 +1,29 @@
 #!/usr/bin/env python3
 """
-Script to recreate database tables with updated schema
+Database Recreation Script
+
+This script drops and recreates all database tables.
 """
 
-from api.database import DatabaseService
-from api.models import Base
-from sqlalchemy import create_engine
 import os
+from sqlalchemy import create_engine
+from api.models import Base
 
-def main():
-    # Get database URL
-    database_url = os.getenv('DATABASE_URL', 'postgresql://postgres:password@localhost:5432/tn5250_api')
+def recreate_database():
+    """Drop and recreate all database tables"""
+    database_url = os.getenv('DATABASE_URL', 'postgresql://postgres:postgres@localhost:5432/tn5250_api')
     engine = create_engine(database_url)
-
-    print('Dropping existing tables...')
+    
+    print("Dropping all tables...")
     Base.metadata.drop_all(engine)
     
-    print('Creating new tables with updated schema...')
+    print("Creating all tables...")
     Base.metadata.create_all(engine)
     
-    print('Database schema updated successfully!')
-    print('All tables now have proper auto-increment primary keys.')
+    print("Database recreation completed!")
+    print("Tables created:")
+    for table_name in Base.metadata.tables.keys():
+        print(f"  - {table_name}")
 
 if __name__ == "__main__":
-    main() 
+    recreate_database() 
